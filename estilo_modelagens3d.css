@@ -1,0 +1,162 @@
+@font-face{font-family: comfortaa; src:url(fonts/Comfortaa[wght].ttf);}
+@font-face{font-family: roboto; src:url(fonts/RobotoMono-Medium.ttf);}
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color:white;
+	font-family: comfortaa, roboto, verdana, arial, tahoma;
+	color:white;
+	text-decoration: none;
+}
+/* COMEÇO GALERIAS IMAGENS*/
+#mods_large{ 
+	position: absolute;
+	display: block;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	background-color: rgba(0,0,70,1);
+	overflow: hidden;
+}
+.x_do_full{position: fixed; top: 2%; right: 2%; font-size: 50px; cursor: pointer; transition: 3s;}
+.x_do_full:hover{color: #AAF; transform: scale(1.5); transition: 1s;}
+.mods_titulo{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 7.5%;
+	font-size: 35px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.mods_sobre{
+	position: fixed;
+	top: 92.5%;
+	width: 80%;
+	margin-left: 10%; 
+	height: 7.5%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.mods_large_full{
+	position: relative; 
+	width: 100%; 
+	height: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin: auto;
+}
+.mods_subtitulo{
+	position: absolute;
+	top: 87.5%;
+	width: 30%;
+	height: 5%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px; 
+	background-color: rgba(0,0,0,0.6);
+	font-size: 30px;
+}
+.imagens {
+	position: relative;
+	height: 85%;
+	width: auto;
+	max-width: 80%;
+}
+iframe{
+	position: relative;
+	height: 85%;
+	width: auto;
+	min-width: 80%;
+}
+.next, .prev{background-color: rgba(0,0,0,0); transition: 3s;}
+.next{position: absolute; right: 2.6%}
+.prev{position: absolute; left: 2.6%}
+.next img, .prev img{
+	position: relative;
+	width: 100%;
+	height: auto;
+	border: 1px solid rgba(255,255,255,0);
+	transition: 3s;
+}	
+.next:hover, .prev:hover{background-color: rgba(0,0,70,1); transition: 1s;}
+.next img:hover, .prev img:hover{
+	border: 1px solid white;
+	border-radius: 30px;
+	-webkit-filter: hue-rotate(120deg); /* Safari 6.0 - 9.0 */
+  	filter: hue-rotate(120deg);
+	transition: 1s;
+}
+/* FIM GALERIAS IMAGENS*/
+
+#fundo {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,70,1);
+	z-index: -11;
+}
+#loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #003;
+	animation: loader 1s ease-out;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	z-index: 20;
+}
+@keyframes loader {
+	0%{background-color: #003; left:0;}
+	90%{background-color: transparent; left: 0;}
+	100%{background-color: transparent; left: -100%;}
+}
+/* visualizações queri */
+@media only screen and (min-width: 1281px){
+	@media only screen and (max-width: 1600px){
+	    .mods_titulo{font-size: 35px;}
+	    .mods_sobre{font-size: 30px;}
+		.mods_subtitulo{width: 40%; font-size: 30px;}
+	}
+}
+@media only screen and (min-width: 961px) and (orientation: portrait){
+	@media only screen and (max-width: 1280px) and (orientation: portrait){
+	    .mods_titulo{font-size: 40px;}
+		.mods_subtitulo{width: 60%; font-size: 35px; top: 82.5%;}
+		.imagens{width: 80%; height: auto;}
+		iframe{height: 80%;	width: 80%;}
+		.mods_sobre{font-size: 35px; text-align: center; top: 90%;}
+	}
+}
+@media only screen and (min-width: 961px) and (orientation: landscape){
+	@media only screen and (max-width: 1280px) and (orientation: landscape){
+	    .mods_titulo{font-size: 20px;}
+		.mods_subtitulo{width: 20%; font-size: 15px; top: 85%;}
+		.imagens{width: auto; height: 80%; max-width: 80%;}
+		iframe{height: 80%;	width: 80%;}
+		.mods_sobre{font-size: 15px; text-align: center; top: 90%;}
+	}
+}
+/* visualizações queri */
+@media only screen and (min-width: 0px){
+	@media only screen and (max-width: 960px){
+	    .mods_titulo{font-size: 38px;}
+		.mods_subtitulo{width: 90%; font-size: 32px; top: 77.5%;}
+		.imagens{width: 70%; height: auto;}
+		.mods_sobre{font-size: 32px; width: 90%; margin-left: 5%; text-align: center; top:87.5%;}
+	}
+}

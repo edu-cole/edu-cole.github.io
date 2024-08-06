@@ -1,0 +1,223 @@
+@font-face{font-family: comfortaa; src:url(fonts/Comfortaa[wght].ttf);}
+@font-face{font-family: roboto; src:url(fonts/RobotoMono-Medium.ttf);}
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color:white;
+	font-family: comfortaa, roboto, verdana, arial, tahoma;
+	color:white;
+	text-decoration: none;
+}
+/* COMEÇO GALERIAS IMAGENS*/
+#ds_ilustra_large, #ds_hqs_scan_large{ 
+	position: absolute;
+	display: none;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	background-color: rgba(0,0,70,1);
+	z-index: 20;
+	overflow: hidden;
+}
+.x_do_full{position: fixed; top: 2%; right: 2%; font-size: 50px; cursor: pointer; transition: 3s; z-index: 2;}
+.x_do_full:hover{color: #AAF; transform: scale(1.5); transition: 1s;}
+.ds_titulo{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 7.5%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+}
+.ds_large_full{
+	position: relative; 
+	width: 100%; 
+	height: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin: auto;
+	background-color: transparent;
+}
+.ds_subtitulo{
+	position: absolute;
+	top: 95%;
+	width: 95%;
+	margin-bottom: 2%;
+	text-align: center;
+	background-color: transparent;
+	font-size: 20px;
+}
+.imagens, .imagens2, .imagens3{
+	position: relative;
+	height: 85%;
+	width: auto;
+	max-width: 80%;
+}
+.next, .prev{background-color: rgba(0,0,0,0); transition: 3s;}
+.next{position: absolute; right: 2.6%}
+.prev{position: absolute; left: 2.6%}
+.next img, .prev img{
+	position: relative;
+	width: 100%;
+	height: auto;
+	border: 1px solid rgba(255,255,255,0);
+	transition: 3s;
+}	
+.next:hover, .prev:hover{background-color: rgba(0,0,70,1); transition: 1s;}
+.next img:hover, .prev img:hover{
+	border: 1px solid white;
+	border-radius: 30px;
+	-webkit-filter: hue-rotate(120deg); /* Safari 6.0 - 9.0 */
+  	filter: hue-rotate(120deg);
+	transition: 1s;
+}
+/* FIM GALERIAS IMAGENS*/
+/* COMEÇO MENU/TELA PRINCIPAL */
+.ds_titulo0{
+	position: absolute;
+	width: 100%;
+	font-size: 30px;
+	z-index: 1;
+	background-color: transparent;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+}
+#ds_menu_geral{
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	background-color: rgba(0,0,70,1);
+}
+#ds_bots_menu1, #ds_bots_menu2 {
+	position: relative;
+	margin-top: 7%;
+	padding-top: 2%;
+	height: auto;
+	transition: 3s;
+	background-color: transparent;
+	z-index: 1;
+}
+#ds_bots_menu1{width: 47.25%;}
+#ds_bots_menu2{width: 49%;}
+#ds_bots_menu1:hover, #ds_bots_menu2:hover{transform: scale(0.95); opacity: 0.75; transition: 1s; cursor: pointer;}
+#ds_bots_menu1 img, #ds_bots_menu2 img{width: 100%; height: auto; min-height: 90%;}
+.menu_subtitulo{
+	position: relative;
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 20px;
+	background-color: transparent;
+}
+#fundo_menu {
+	position: absolute;
+	top: 15%;
+	width: 100%;
+	height: 85%;
+	background-color: #003;
+}
+#fundo {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,70,1);
+	z-index: -1;
+}
+#loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #003;
+	animation: loader 1s ease-out;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	z-index: 20;
+}
+#volta_rgb_html{position: absolute; top: 2%; right: 2%; font-size: 50px; transition: 3s;}
+#volta_rgb_html:hover{color: #AAF; transform: scale(1.5); transition: 1s;}
+@keyframes loader {
+	0%{background-color: #003; left:0;}
+	90%{background-color: transparent; left: 0;}
+	100%{background-color: transparent; left: -100%;}
+}
+/* visualizações queri */
+@media only screen and (min-width: 1281px){
+	@media only screen and (max-width: 1600px){
+		.ds_subtitulo{width: 90%;}
+	}
+}
+@media only screen and (min-width: 961px) and (orientation: portrait){
+	@media only screen and (max-width: 1280px) and (orientation: portrait){
+	    .ds_titulo0{font-size: 40px;}
+	    .ds_large_full{margin-top: -3%;}
+	    .ds_titulo{font-size: 36px; top: 3%;}
+		.ds_subtitulo{font-size: 25px; top: 90%;}
+		#ds_menu_geral{flex-direction: column;}
+		#fundo_menu {top: 5%;height: 95%;}
+		#ds_bots_menu1, #ds_bots_menu2 {width: 90%; margin-left: 5%;}
+		.menu_subtitulo{font-size: 35px;}
+		.imagens{width: 75%; height: auto; max-height: 70%;}
+		.imagens2{width: 75%; height: auto; max-height: 70%;}
+		.imagens3{width: auto; height: 70%; max-width: 75%;}
+	}
+}
+@media only screen and (min-width: 961px) and (orientation: landscape){
+	@media only screen and (max-width: 1280px) and (orientation: landscape){
+	    .ds_titulo0{font-size: 25px;}
+	    .ds_titulo{font-size: 25px; top: 3%;}
+		.ds_subtitulo{font-size: 17px; top: 89%;}
+		#ds_menu_geral{flex-direction: column;}
+		#fundo_menu {top: 5%;height: 95%;}
+		#ds_bots_menu1, #ds_bots_menu2 {width: 90%; margin-left: 5%;}
+		.menu_subtitulo{font-size: 20px;}
+		.imagens{width: auto; height: 70%; max-width: 75%;}
+		.imagens2{width: auto; height: 70%; max-width: 75%;}
+		.imagens3{width: auto; height: 70%; max-width: 75%;}
+	}
+}
+/* visualizações queri */
+@media only screen and (min-width: 0px) and (orientation: portrait){
+	@media only screen and (max-width: 960px) and (orientation: portrait){
+		.ds_titulo0{font-size: 30px;}
+	    .ds_titulo{font-size: 30px; top: 3%;}
+		.ds_subtitulo{font-size: 20px; top: 85%;}
+		#ds_menu_geral{flex-direction: column;}
+		#fundo_menu {top: 5%;height: 95%;}
+		#ds_bots_menu1, #ds_bots_menu2 {width: 95%; margin-left: 2.5%;}
+		.menu_subtitulo{font-size: 25px;}
+		.imagens{width: 65%; height: auto; max-height: 60%;}
+		.imagens2{width: 40%; height: auto; max-height: 60%;}
+		.imagens3{width: auto; height: 60%; max-width: 65%;}
+	}
+}
+@media only screen and (min-width: 0px) and (orientation: landscape){
+	@media only screen and (max-width: 960px) and (orientation: landscape){
+		.ds_titulo0{font-size: 20px;}
+	    .ds_titulo{font-size: 20px; top: 3%;}
+		.ds_subtitulo{font-size: 15px; top: 85%;}
+		#ds_menu_geral{flex-direction: column;}
+		#fundo_menu {top: 5%;height: 95%;}
+		#ds_bots_menu1, #ds_bots_menu2 {width: 95%; margin-left: 2.5%;}
+		.menu_subtitulo{font-size: 17px;}
+		.imagens{width: auto; height: 60%; max-width: 65%;}
+		.imagens2{width: auto; height: 60%; max-width: 65%;}
+		.imagens3{width: auto; height: 60%; max-width: 65%;}
+	}
+}

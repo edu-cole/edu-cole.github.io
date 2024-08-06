@@ -1,0 +1,101 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Edu Cole's Portfolio in HTML - CMYK</title>
+	<link rel="stylesheet" type="text/css" href="estilo_cmyk.css">
+
+</head>
+<body>
+<main>
+
+<header>
+	<h1>Eduardo Cole's Portfolio - Designer</h1>
+	<h1>Artesanal Graphic Designs --- CMYK - The colors of the pigment</h1> 
+</header>
+
+<a href="index_cmyk.html" id="br_flag"><img src="img/home/bandeira_br_thumb1.jpg"></a>
+<a href="index_cmyk_en.html" id="en_flag"><img src="img/home/bandeira_en_thumb1.jpg"></a>
+
+<!-- COMEÇO MENU monitores -->
+<nav id="menu_princ_rgb">
+<a href="index_en.html">Home</a>
+<a href="index_rgb_en.html">RGB</a>
+<a href="index_cmyk_en.html" class="current">CMYK</a>
+<a href="index_wav_en.html">WAV</a>
+<a href="#" onclick="on_descricao()">About</a>
+<a href="#"onclick="on_contatos()">Portals</a>
+<a href="#" onclick="on_cv_edu()">Curriculum</a>
+</nav>
+<!-- FIM MENU monitores -->
+
+<!-- COMEÇO MENU mobiles -->
+<nav id="menu_princ_rgb_mob">
+	<div id="menu_p1">
+<a href="index_en.html">Home</a>
+<a href="index_rgb_en.html">RGB</a>
+<a href="index_cmyk_en.html" class="current">CMYK</a>
+<a href="index_wav_en.html">WAV</a>
+</div>
+	<div id="menu_p2">
+<a href="#" onclick="on_descricao()">About</a>
+<a href="#"onclick="on_contatos()">Portals</a>
+<a href="#" onclick="on_cv_edu()">Curriculum</a>
+	</div>
+</nav>
+<!-- FIM MENU mobiles -->
+
+<div id="descricao_box" onclick="off_descricao()"><p>I would like to work with Front-End development, using HTML5 and CSS languages.<br><br><strong>Experience with 2D ad 3D graphic projects:</strong><br>- Editing of documentaries, art videos, news videos, advertisements and videos of events.<br>- Soundtrack creations<br>- Illustrations<br>- Brand development<br>- 3D Modeling<br>- 3D Printing<br>- Development of websites in HTML5, CSS and JS<br><br><strong>Used Softwares:</strong><br>Photoshop, Illustrator, Indesign, Dreamweaver, Sublime Text, Final-cut, After Effects, 3dsmax, Zbrush.<br><br><strong>Graduation:</strong><br>Graphic Design at Mackenzie graduated in 2013; with several extra-curricular activities within the area of ​​graphic design.</p><div class="x_do_full">&times;</div></div>
+
+<div id="contatos_box"><p><strong>Personal</strong><br><a href="http://eduardocole.blogspot.com/" target="_blank">My personal blog</a><br><a href="https://www.youtube.com/user/ducole" target="_blank">My Youtube Channel since 2010</a><br><a href="https://www.facebook.com/eduardo.cole.9" target="_blank">My Facebook</a><br><a href="https://www.flickr.com/photos/plauns/" target="_blank">My Flickr</a><br><br><strong>2C3D</strong><br>Company that I created with my brother William Cole since 2016, 3D modeling and 3D printing services</br><a href="https://2c3d.wordpress.com/" target="_blank" id="empresa_2c3d">Our website</a><br><a href="https://giphy.com/channel/2c3d" target="_blank">Our Giphy</a><br><a href="https://www.facebook.com/pagina2c3d/" target="_blank">Our Facebook</a><br><br><strong>Bike é Legal</strong><br>Portal of journalism about the bicycle<br><a href="https://bikeelegal.com/?s=Edu+Cole" target="_blank">My written news</a><br><a href="https://www.facebook.com/BikeELegal/" target="_blank">Bike é Legal's Facebook</a><br><br><strong>NeoMitoSofia</strong><br>Study Group about philosophy and comic books<br><a href="https://neomitosofia.wordpress.com/" target="_blank">Coauthored blog since 2009</a></p><div class="x_do_full" onclick="off_contatos()">&times;</div></div>
+
+<div id="cv_edu" onclick="off_cv_edu()"><h1>2019 Curriculum Vitae</h1><img src="img/home/curric_azul_2019_p1_en.jpg"><img src="img/home/curric_azul_2019_p2_en.jpg"><img src="img/home/curric_azul_2019_p3_en.jpg"><div class="x_do_full">&times;</div></div>
+
+<script>
+function on_descricao() {document.getElementById("descricao_box").style.display = "flex", document.documentElement.scrollTop = 0, document.getElementById("cmyk_menu_geral").style.display = "none";}
+function off_descricao() {document.getElementById("descricao_box").style.display = "none", document.documentElement.scrollTop = 0, document.getElementById("cmyk_menu_geral").style.display = "flex";}
+function on_contatos() {document.getElementById("contatos_box").style.display = "flex", document.documentElement.scrollTop = 0, document.getElementById("cmyk_menu_geral").style.display = "none";}
+function off_contatos() {document.getElementById("contatos_box").style.display = "none", document.documentElement.scrollTop = 0, document.getElementById("cmyk_menu_geral").style.display = "flex";}
+function on_cv_edu() {document.getElementById("cv_edu").style.display = "flex", document.documentElement.scrollTop = 0, document.getElementById("cmyk_menu_geral").style.display = "none";}
+function off_cv_edu() {document.getElementById("cv_edu").style.display = "none", document.documentElement.scrollTop = 0, document.getElementById("cmyk_menu_geral").style.display = "flex";}
+</script>
+
+<section id="cmyk_menu_geral">
+<nav>
+<h4>Texts</h4>
+<a href="index_contos_en.html"><img src="img/cmyk/0_textos/cidadao1_thumb.jpg"><p>Journalism</p></a>
+<a href="index_contos_en.html"><img src="img/cmyk/0_textos/imaginario_marrom_thumb.jpg"><p>Essays</p></a>
+<a href="index_contos_en.html"><img src="img/cmyk/0_textos/palavras_thumb.jpg"><p>Tales and<br>academics</p></a>
+</nav>
+
+<nav>
+<h4>Scans</h4>
+<a href="index_desenhos_scaneados_en.html"><img src="img/cmyk/1_desenhos_scaneados/ilustra1_thumb.jpg"><p>Illustrations</p></a>
+<a href="index_desenhos_scaneados_en.html"><img src="img/cmyk/1_desenhos_scaneados/hqs_thumb.jpg"><p>Comics</p></a>
+</nav>
+
+<nav>
+<h4>Brands</h4>
+<a href="index_marcas_en.html"><img src="img/cmyk/2_marcas/zz_thumb.jpg"></a>
+<a href="index_marcas_en.html"><img src="img/cmyk/2_marcas/nms_thumb.jpg"></a>
+<a href="index_marcas_en.html"><img src="img/cmyk/2_marcas/2c3d_thumb.jpg"></a>
+<a href="index_marcas_en.html"><img src="img/cmyk/2_marcas/pp_thumb.jpg"></a>
+</nav>
+
+<nav>
+<h4>Comunications</h4>
+<a href="index_comunicas_en.html#comunicas_large1"><img src="img/cmyk/3_comunicacoes_visuais/pessoais_thumb.jpg"><p>Personal</p></a>
+<a href="index_comunicas_en.html#comunicas_large2"><img src="img/cmyk/3_comunicacoes_visuais/nms2_thumb.jpg"><p>NMS</p></a>
+<a href="index_comunicas_en.html#comunicas_large3"><img src="img/cmyk/3_comunicacoes_visuais/xand1_thumb.jpg"><p>Xandão</p></a>
+</nav>
+</section>
+
+<footer><p>Phone: +55 (11) 99552-8114</p><p>E-mail: ducole@gmail.com</p><p>Brazil's Social Security Numbers: 221.187.548-33</p><p>Birth: 14/08/1979</p></footer>
+
+<div id="loader"></div>
+<div id="fundo"></div>
+
+</main>
+</body>
+</html>

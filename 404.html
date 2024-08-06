@@ -1,0 +1,73 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Portfólio: Edu Cole em HTML - WAV</title>
+	<link rel="stylesheet" type="text/css" href="estilo_erros.css">
+
+</head>
+<body>
+    
+    <div id="cv_edu" onclick="off_cv_edu()"><h1>Curriculum Vitae de 2019</h1><img src="img/home/curric_azul_2019_p1.jpg"><img src="img/home/curric_azul_2019_p2.jpg"><img src="img/home/curric_azul_2019_p3.jpg"><div class="x_do_full">&times;</div></div>
+    
+<main id="pagina_geral">
+
+<header>
+	<h1>Portfólio de Eduardo Cole - Designer</h1>
+	<h1>Trilhas Sonoras --- WAV - As ondas da música</h1> 
+</header>
+
+<!-- COMEÇO MENU monitores -->
+<nav id="menu_princ_rgb">
+<a href="index.html">Home</a>
+<a href="index_rgb.html">RGB</a>
+<a href="index_cmyk.html">CMYK</a>
+<a href="index_wav.html">WAV</a>
+<a href="#" onclick="on_descricao()">Sobre</a>
+<a href="#"onclick="on_contatos()">Portais</a>
+<a href="#" onclick="on_cv_edu()">Curriculum</a>
+</nav>
+<!-- FIM MENU monitores -->
+
+<!-- COMEÇO MENU mobiles -->
+<nav id="menu_princ_rgb_mob">
+	<div id="menu_p1">
+<a href="index.html">Home</a>
+<a href="index_rgb.html">RGB</a>
+<a href="index_cmyk.html">CMYK</a>
+<a href="index_wav.html">WAV</a>
+</div>
+	<div id="menu_p2">
+<a href="#" onclick="on_descricao()">Sobre</a>
+<a href="#"onclick="on_contatos()">Portais</a>
+<a href="#" onclick="on_cv_edu()">Curriculum</a>
+	</div>
+</nav>
+<!-- FIM MENU mobiles -->
+
+<div id="descricao_box" onclick="off_descricao()"><p>Gostaria de trabalhar com desenvolvimento Front-End, utilizando as linguagens HTML5 e CSS.<br><br><strong>Experiência em projetos gráficos 2D e 3D:</strong><br>- Edição de documentários, vídeos de arte, videorreportagens, publicidades e vídeos de eventos.<br>- Criações de trilhas sonoras<br>- Ilustrações<br>- Desenvolvimento de marcas<br>- Modelagens 3D<br>- Impressões 3D<br>- Desenvolvimento de sites em HTML5, CSS e JS<br><br><strong>Programas utilizados:</strong><br>Photoshop, Illustrator, Indesign, Dreamweaver, Sublime Text, Final-cut, After Effects, 3dsmax, zbrush.<br><br><strong>Formação:</strong><br>Design Gráfico no Mackenzie graduado em 2013; com diversos cursos extra-curriculares dentro da área do design gráfico.</p><div class="x_do_full">&times;</div></div>
+
+<div id="contatos_box"><p><strong>Pessoais</strong><br><a href="http://eduardocole.blogspot.com/" target="_blank">Meu blog pessoal</a><br><a href="https://www.youtube.com/user/ducole" target="_blank">Meu canal de Youtube desde 2010</a><br><a href="https://www.facebook.com/eduardo.cole.9" target="_blank">Meu Facebook</a><br><a href="https://www.flickr.com/photos/plauns/" target="_blank">Meu Flickr</a><br><br><strong>2C3D</strong><br>Empresa que criei com meu irmão William Cole desde 2016, serviços de modelagens e impressões 3D</br><a href="https://2c3d.wordpress.com/" target="_blank" id="empresa_2c3d">Nosso site</a><br><a href="https://giphy.com/channel/2c3d" target="_blank">Nosso Giphy</a><br><a href="https://www.facebook.com/pagina2c3d/" target="_blank">Nosso Facebook</a><br><br><strong>Bike é Legal</strong><br>Portal de Jornalismo sobre a bicicleta<br><a href="https://bikeelegal.com/?s=Edu+Cole" target="_blank">Minhas reportagens no site</a><br><a href="https://www.facebook.com/BikeELegal/" target="_blank">Facebook do Bike é Legal</a><br><br><strong>NeoMitoSofia</strong><br>Grupo de estudos de filosofia e histórias em quadrinhos<br><a href="https://neomitosofia.wordpress.com/" target="_blank">Blog coletivo desde 2009</a></p><div class="x_do_full" onclick="off_contatos()">&times;</div></div>
+
+<script>
+function on_descricao() {document.getElementById("descricao_box").style.display = "flex", document.documentElement.scrollTop = 0;}
+function off_descricao() {document.getElementById("descricao_box").style.display = "none", document.documentElement.scrollTop = 0;}
+function on_contatos() {document.getElementById("contatos_box").style.display = "flex", document.documentElement.scrollTop = 0;}
+function off_contatos() {document.getElementById("contatos_box").style.display = "none", document.documentElement.scrollTop = 0;}
+function on_cv_edu() {document.getElementById("cv_edu").style.display = "flex", document.documentElement.scrollTop = 0, document.getElementById("pagina_geral").style.display = "none";}
+function off_cv_edu() {document.getElementById("cv_edu").style.display = "none", document.documentElement.scrollTop = 0, document.getElementById("pagina_geral").style.display = "block";}
+</script>
+
+<div id="erro_geral"><p>Ops... Você tentou acessar uma página que não existe. <a href="index.html">Volte para a home aqui</a><br>Ops... 
+You tried to access a page that doesn't exist. <a href="index.html">Back to the home here</a></p></div>
+<div id="img_erro"><img src="img/home/erro1_gif.gif"></div>
+
+<footer><p>Cel: +55 (11) 99552-8114</p><p>E-mail: ducole@gmail.com</p><p>CPF: 221.187.548-33</p><p>Nascimento: 14/08/1979</p></footer>
+
+<div id="loader"></div>
+<div id="fundo"></div>
+
+</main>
+</body>
+</html>

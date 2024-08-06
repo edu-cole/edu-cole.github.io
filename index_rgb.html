@@ -1,0 +1,118 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Portfólio: Edu Cole em HTML - RGB</title>
+	<link rel="stylesheet" type="text/css" href="estilo_rgb.css">
+
+</head>
+<body>
+<main>
+
+<header>
+	<h1>Portfólio de Eduardo Cole - Designer</h1>
+	<h1>Designs Gráficos Digitais --- RGB - As cores da luz</h1> 
+</header>
+
+<a href="index_rgb.html" id="br_flag"><img src="img/home/bandeira_br_thumb1.jpg"></a>
+<a href="index_rgb_en.html" id="en_flag"><img src="img/home/bandeira_en_thumb1.jpg"></a>
+
+<!-- COMEÇO MENU monitores -->
+<nav id="menu_princ_rgb">
+<a href="index.html">Home</a>
+<a href="index_rgb.html" class="current">RGB</a>
+<a href="index_cmyk.html">CMYK</a>
+<a href="index_wav.html">WAV</a>
+<a href="#" onclick="on_descricao()">Sobre</a>
+<a href="#"onclick="on_contatos()">Portais</a>
+<a href="#" onclick="on_cv_edu()">Curriculum</a>
+</nav>
+<!-- FIM MENU monitores -->
+
+<!-- COMEÇO MENU mobiles -->
+<nav id="menu_princ_rgb_mob">
+	<div id="menu_p1">
+<a href="index.html">Home</a>
+<a href="index_rgb.html" class="current">RGB</a>
+<a href="index_cmyk.html">CMYK</a>
+<a href="index_wav.html">WAV</a>
+</div>
+	<div id="menu_p2">
+<a href="#" onclick="on_descricao()">Sobre</a>
+<a href="#"onclick="on_contatos()">Portais</a>
+<a href="#" onclick="on_cv_edu()">Curriculum</a>
+	</div>
+</nav>
+<!-- FIM MENU mobiles -->
+
+<div id="descricao_box" onclick="off_descricao()"><p>Gostaria de trabalhar com desenvolvimento Front-End, utilizando as linguagens HTML5 e CSS.<br><br><strong>Experiência em projetos gráficos 2D e 3D:</strong><br>- Edição de documentários, vídeos de arte, videorreportagens, publicidades e vídeos de eventos.<br>- Criações de trilhas sonoras<br>- Ilustrações<br>- Desenvolvimento de marcas<br>- Modelagens 3D<br>- Impressões 3D<br>- Desenvolvimento de sites em HTML5, CSS e JS<br><br><strong>Programas utilizados:</strong><br>Photoshop, Illustrator, Indesign, Dreamweaver, Sublime Text, Final-cut, After Effects, 3dsmax, zbrush.<br><br><strong>Formação:</strong><br>Design Gráfico no Mackenzie graduado em 2013; com diversos cursos extra-curriculares dentro da área do design gráfico.</p><div class="x_do_full">&times;</div></div>
+
+<div id="contatos_box"><p><strong>Pessoais</strong><br><a href="http://eduardocole.blogspot.com/" target="_blank">Meu blog pessoal</a><br><a href="https://www.youtube.com/user/ducole" target="_blank">Meu canal de Youtube desde 2010</a><br><a href="https://www.facebook.com/eduardo.cole.9" target="_blank">Meu Facebook</a><br><a href="https://www.flickr.com/photos/plauns/" target="_blank">Meu Flickr</a><br><br><strong>2C3D</strong><br>Empresa que criei com meu irmão William Cole desde 2016, serviços de modelagens e impressões 3D</br><a href="https://2c3d.wordpress.com/" target="_blank" id="empresa_2c3d">Nosso site</a><br><a href="https://giphy.com/channel/2c3d" target="_blank">Nosso Giphy</a><br><a href="https://www.facebook.com/pagina2c3d/" target="_blank">Nosso Facebook</a><br><br><strong>Bike é Legal</strong><br>Portal de Jornalismo sobre a bicicleta<br><a href="https://bikeelegal.com/?s=Edu+Cole" target="_blank">Minhas reportagens no site</a><br><a href="https://www.facebook.com/BikeELegal/" target="_blank">Facebook do Bike é Legal</a><br><br><strong>NeoMitoSofia</strong><br>Grupo de estudos de filosofia e histórias em quadrinhos<br><a href="https://neomitosofia.wordpress.com/" target="_blank">Blog coletivo desde 2009</a></p><div class="x_do_full" onclick="off_contatos()">&times;</div></div>
+
+<div id="cv_edu" onclick="off_cv_edu()"><h1>Curriculum Vitae de 2019</h1><img src="img/home/curric_azul_2019_p1.jpg"><img src="img/home/curric_azul_2019_p2.jpg"><img src="img/home/curric_azul_2019_p3.jpg"><div class="x_do_full">&times;</div></div>
+
+<script>
+function on_descricao() {document.getElementById("descricao_box").style.display = "flex", document.documentElement.scrollTop = 0;}
+function off_descricao() {document.getElementById("descricao_box").style.display = "none", document.documentElement.scrollTop = 0;}
+function on_contatos() {document.getElementById("contatos_box").style.display = "flex", document.documentElement.scrollTop = 0;}
+function off_contatos() {document.getElementById("contatos_box").style.display = "none", document.documentElement.scrollTop = 0;}
+function on_cv_edu() {document.getElementById("cv_edu").style.display = "flex", document.documentElement.scrollTop = 0, document.getElementById("rgb_menu_geral").style.display = "none";}
+function off_cv_edu() {document.getElementById("cv_edu").style.display = "none", document.documentElement.scrollTop = 0, document.getElementById("rgb_menu_geral").style.display = "flex";}
+</script>
+
+<section id="rgb_menu_geral">
+<nav>
+<h4>Animações</h4>
+<a href="index_animacoes.html#anim_m_fio_large"><img src="img/rgb/1_animacao/pedal_meio_fio_thumb_346_90.jpg"><p>Pedal meio fio</p></a>
+<a href="index_animacoes.html#anim_ident_large"><img src="img/rgb/1_animacao/identidade_thumb_346_90.jpg"><p>Identidade</p></a>
+<a href="index_animacoes.html#anim_sade_large"><img src="img/rgb/1_animacao/sade_thumb_346_90.jpg"><p>Sade</p></a>
+<a href="index_animacoes.html#anim_menu_large"><img src="img/rgb/1_animacao/introducao_menu_thumb_346_90.jpg"><p>Menu</p></a>
+<a href="index_animacoes.html#anim_carna_large"><img src="img/rgb/1_animacao/carnaval_2018_thumb_346_90.jpg"><p>Carnaval</p></a>
+<a href="index_animacoes.html#anim_linhas_large"><img src="img/rgb/1_animacao/linhas_curvas_thumb_346_90.jpg"><p>Linhas curvas</p></a>
+</nav>
+
+<nav>
+<h4>Edições</h4>
+<a href="index_edicoes.html#edits_formigas_large"><img src="img/rgb/2_edicao_video/formigas_thumb_346_110.jpg"><p>Formigas</p></a>
+<a href="index_edicoes.html#edits_varredura_large"><img src="img/rgb/2_edicao_video/varredura_perceptiva_thumb_346_110.jpg"><p>Varredura perceptiva</p></a>
+<a href="index_edicoes.html#edits_reel_large"><img src="img/rgb/2_edicao_video/demo_reel_2014_thumb_346_110.jpg"><p>Demo Reel</p></a>
+<a href="index_edicoes.html#edits_guarapiranga_large"><img src="img/rgb/2_edicao_video/abraco_guarapiranga__thumb_346_110.jpg"><p>Abraço Guarapiranga</p></a>
+<a href="index_edicoes.html#edits_capivara_large"><img src="img/rgb/2_edicao_video/pedal_capivaras_thumb_346_110.jpg"><p>Pedal Capivaras</p></a>
+</nav>
+
+<nav>
+<h4>Desenhos Digitais</h4>
+<a href="index_desen_dig.html"><img src="img/rgb/3_desenhos_digitais/thumbs/tel_do_alem_thumb_346_110.jpg"><p>Telefonema do além</p></a>
+<a href="index_desen_dig.html"><img src="img/rgb/3_desenhos_digitais/thumbs/des_bikeelegal_thumb_346_110.jpg"><p>Bike é Legal</p></a>
+<a href="index_desen_dig.html"><img src="img/rgb/3_desenhos_digitais/thumbs/concilio_destruicao_thumb_346_110.jpg"><p>Concílio da destruição</p></a>
+<a href="index_desen_dig.html"><img src="img/rgb/3_desenhos_digitais/thumbs/hqs_curtas_thumb_346_110.jpg"><p>Hqs curtas</p></a>
+<a href="index_desen_dig.html"><img src="img/rgb/3_desenhos_digitais/thumbs/trabalhos_facul_thumb_346_110.jpg"><p>Ilustrações</p></a>
+</nav>
+
+<nav>
+<h4>Modelagens 3D</h4>
+<a href="index_modelagens3d.html#mods_1_p1"><img src="img/rgb/4_modelagens_3d/thumbs/mesa_jantar_populada_thumb_346_110.jpg"><p>Mesa de jantar</p></a>
+<a href="index_modelagens3d.html#mods_1_p2"><img src="img/rgb/4_modelagens_3d/thumbs/smart_table_thumb_346_110.jpg"><p>Mesa smart</p></a>
+<a href="index_modelagens3d.html#mods_1_p4"><img src="img/rgb/4_modelagens_3d/thumbs/banheiro_moderno_thumb_346_110.jpg"><p>Banheiro moderno</p></a>
+<a href="index_modelagens3d.html#mods_1_p5"><img src="img/rgb/4_modelagens_3d/thumbs/casa_mobiliada_thumb_346_110.jpg"><p>Casa mobiliada</p></a>
+<a href="index_modelagens3d.html#mods_1_p6"><img src="img/rgb/4_modelagens_3d/thumbs/arma_carro_thumb_346_110.jpg"><p>Carro = Arma</p></a>
+</nav>
+
+<nav>
+<h4>Sites</h4>
+<a href="index_sites.html"><img src="img/rgb/5_sites/thumbs/site_nms_thumb_346_140.jpg"><p>NMS</p></a>
+<a href="index_sites.html"><img src="img/rgb/5_sites/thumbs/site_2c3d_thumb_346_140.jpg"><p>2C3D</p></a>
+<a href="index_sites.html"><img src="img/rgb/5_sites/thumbs/site_boi_thumb_346_140.jpg"><p>Boibana</p></a>
+<a href="index_sites.html"><img src="img/rgb/5_sites/thumbs/site_vitrine_thumb_346_140.jpg"><p>Vitrine</p></a>
+</nav>
+</section>
+
+<footer><p>Cel: +55 (11) 99552-8114</p><p>E-mail: ducole@gmail.com</p><p>CPF: 221.187.548-33</p><p>Nascimento: 14/08/1979</p></footer>
+
+<div id="loader"></div>
+<div id="fundo"></div>
+
+</main>
+</body>
+</html>

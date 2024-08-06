@@ -1,0 +1,101 @@
+@font-face{font-family: comfortaa; src:url(fonts/Comfortaa[wght].ttf);}
+@font-face{font-family: roboto; src:url(fonts/RobotoMono-Medium.ttf);}
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color:white;
+	font-family: comfortaa, roboto, verdana, arial, tahoma;
+	color:white;
+}
+#bg_geral_edits {
+	position: absolute;
+	background-color: rgba(0,0,70,1);
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.coluna_large {
+	position: relative;
+	width: 88.5%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	justify-content: space-around;
+	background-color: #003;
+}
+.row_large {
+	position: relative;
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.large_h1{
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 35px;
+}
+.large_iframe{
+	position: relative;
+	width: 80%;
+	height: 100%;
+}
+.large_p{
+	width: 80%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin: auto;
+	text-align: center;
+	font-size: 30px;
+}
+.next, .prev{background-color: rgba(0,0,0,0); transition: 3s;}
+.next img, .prev img{
+	position: relative;
+	width: 100%;
+	height: auto;
+	border: 1px solid rgba(255,255,255,0);
+	transition: 3s;
+}	
+.next:hover, .prev:hover{background-color: rgba(0,0,70,1); transition: 1s;}
+.next img:hover, .prev img:hover{
+	border: 1px solid white;
+	border-radius: 30px;
+	-webkit-filter: hue-rotate(120deg); /* Safari 6.0 - 9.0 */
+  	filter: hue-rotate(120deg);
+	transition: 1s;
+}	
+.x_do_full{position: fixed; top: 2%; right: 2%; font-size: 50px; cursor: pointer; transition: 3s; z-index: 2; text-decoration: none;}
+.x_do_full:hover{color: #AAF; transform: scale(1.5); transition: 1s;}
+/* visualizações queri */
+@media only screen and (min-width: 601px) and (orientation: portrait){
+	@media only screen and (max-width: 1080px) and (orientation: portrait){
+		.large_h1{font-size: 35px;}
+		.large_p{font-size: 30px;}
+	}
+}
+@media only screen and (min-width: 601px) and (orientation: landscape){
+	@media only screen and (max-width: 1080px) and (orientation: landscape){
+		.large_h1{font-size: 22px;}
+		.large_p{font-size: 17px;}
+	}
+}
+/* visualizações queri */
+@media only screen and (min-width: 0px) and (orientation: portrait){
+	@media only screen and (max-width: 600px) and (orientation: portrait){
+		.large_h1{font-size: 30px;}
+		.large_p{font-size: 25px;}
+	}
+}
+@media only screen and (min-width: 0px) and (orientation: landscape){
+	@media only screen and (max-width: 600px) and (orientation: landscape){
+		.large_h1{font-size: 17px;}
+		.large_p{font-size: 12px;}
+	}
+}
