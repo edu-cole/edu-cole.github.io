@@ -1,0 +1,172 @@
+#conteiner #fundo {
+	background-image: none;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: auto;
+	width: auto;
+	border-top-style: 10;
+	border-right-style: 10;
+	border-bottom-style: none;
+	border-left-style: none;
+	left: 10px;
+	top: 10px;
+}
+#botõeshome   {
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* HEADER */
+
+body {
+	font: normal 12px Arial;
+}
+
+/* Basic jQuery Slider */
+
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;position:absolute;bottom:0;}
+
+#conteudo3 .bjqs-prev a {
+	left: 10px;
+}
+
+#conteudo3 .bjqs-next a {
+	right: 10px;
+}
+
+#botõeshome #h_home   {
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 5px;
+	right: auto;
+	left: 45px;
+}
+#botõeshome #h_vitrine   {
+	position: absolute;
+	left: 329px;
+	top: 4px;
+}
+#botõeshome #h_curso {
+	position: absolute;
+	left: 631px;
+	top: 4px;
+}
+#botõeshome #h_blog {
+	position: absolute;
+	left: 883px;
+	top: 4px;
+}
+#botõeshome #outline {
+	position: absolute;
+	left: 0px;
+	top: 1px;
+}
+#h_contato_f {
+	position: absolute;
+	left: 85px;
+	bottom: auto;
+	top: 603px;
+}
+#h_aluno_f {
+	position: absolute;
+	left: 368px;
+	top: 603px;
+}
+#h_galeria_f {
+	position: absolute;
+	top: 603px;
+	left: 650px;
+}
+#home #lightboxx {
+	background-color: #000;
+	height: 397px;
+	width: 990px;
+	position: absolute;
+	left: 0px;
+	top: 45px;
+	padding: 0px;
+}
+#home #lightboxx #seta_e{
+	top: 153px;
+	position: absolute;
+	left: 14px;
+}
+#home #lightboxx #seta_d{
+	position: absolute;
+	top: 153px;
+	right: 14px;
+}
+#bolinha1 {
+	position: absolute;
+	left: 1px;
+	top: 454px;
+}
+#bolinha2 {
+	position: absolute;
+	top: 454px;
+	left: 28px;
+}
+#bolinha3 {
+	position: absolute;
+	top: 454px;
+	left: 54px;
+}
+#slogan {
+	background-color: #000;
+	height: 111px;
+	width: 990px;
+	position: absolute;
+	top: 481px;
+}
