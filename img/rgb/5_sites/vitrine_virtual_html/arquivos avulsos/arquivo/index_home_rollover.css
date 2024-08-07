@@ -1,0 +1,56 @@
+#conteiner #fundo {
+	background-image: none;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: auto;
+	width: auto;
+	border-top-style: 10;
+	border-right-style: 10;
+	border-bottom-style: none;
+	border-left-style: none;
+	left: 10px;
+	top: 10px;
+}
+#botõeshome   {
+}
+#botõeshome #h_home   {
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 5px;
+	right: auto;
+	left: 45px;
+}
+#botõeshome #h_vitrine   {
+	position: absolute;
+	left: 329px;
+	top: 4px;
+}
+#botõeshome #h_curso {
+	position: absolute;
+	left: 631px;
+	top: 4px;
+}
+#botõeshome #h_blog {
+	position: absolute;
+	left: 883px;
+	top: 4px;
+}
+#h_contato_f {
+	position: absolute;
+	left: 85px;
+	bottom: auto;
+	top: 603px;
+	height: auto;
+	width: auto;
+}
+#h_aluno_f {
+	position: absolute;
+	left: 368px;
+	top: 603px;
+}
+#h_galeria_f {
+	position: absolute;
+	top: 603px;
+	left: 650px;
+}
