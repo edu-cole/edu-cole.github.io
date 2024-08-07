@@ -1,0 +1,136 @@
+@charset "utf-8";
+#conteiner #fundo {
+	background-image: none;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: auto;
+	left: 10px;
+	top: 10px;
+}
+#botõeshome {
+}
+#botõeshome #h_home   {
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 3px;
+	right: auto;
+	left: 150px;
+}
+#botõeshome #h_vitrine   {
+	position: absolute;
+	left: 349px;
+	top: 2px;
+}
+#botõeshome #h_curso {
+	position: absolute;
+	left: 611px;
+	top: 2px;
+}
+#botõeshome #h_blog {
+	position: absolute;
+	left: 883px;
+	top: 2px;
+}
+#botõeshome #outline {
+	position: absolute;
+	left: 329px;
+	top: 0px;
+}
+#h_contato_f {
+	position: absolute;
+	left: 88px;
+	bottom: auto;
+	top: 688px;
+}
+#h_aluno_f {
+	position: absolute;
+	left: 371px;
+	top: 688px;
+}
+#h_galeria_f {
+position: absolute;
+	top: 435px;
+	left: 662px;
+}
+#prof1_f{
+	position: absolute;
+	top: 140px;
+}
+#prof1_descr{
+	position: absolute;
+	top: 140px;
+	left: 226px;
+}
+#prof1_port{
+	position: absolute;
+	top: 387px;
+	height: 290px;
+	width: 990px;
+	background-color: #000;
+}
+#prof1_port1{
+	float: left;
+	margin-top: 70px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+}
+#prof1_port2{
+	float: left;
+	padding-top: 70px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+#prof1_port3{
+	float: left;
+	padding-top: 70px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+#prof1_port4{
+	float: left;
+	padding-top: 70px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+#prof1_port5{
+	float: left;
+	padding-top: 70px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+#prof1_port6{
+	float: left;
+	padding-top: 70px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+#prof1_port7{
+	padding-top: 70px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+#bfinal {
+	position: absolute;
+	width: 990px;
+	background-color: #000;
+	height: 45px;
+	left: 13px;
+	top: 755px;
+}
+
+#foto_gal {
+position: absolute;
+	top: 495px;
+	left: 683px;
+}
+
+

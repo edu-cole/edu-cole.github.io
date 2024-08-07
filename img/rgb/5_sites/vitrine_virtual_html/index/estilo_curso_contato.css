@@ -1,0 +1,122 @@
+#conteiner #fundo {
+	background-image: none;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: auto;
+	width: auto;
+	border-top-style: 10;
+	border-right-style: 10;
+	border-bottom-style: none;
+	border-left-style: none;
+	left: 10px;
+	top: 10px;
+}
+#botõeshome   {
+}
+#botõeshome #h_home   {
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 3px;
+	right: auto;
+	left: 150px;
+}
+#botõeshome #h_vitrine   {
+	position: absolute;
+	left: 349px;
+	top: 2px;
+}
+#botõeshome #h_curso {
+	position: absolute;
+	left: 611px;
+	top: 2px;
+}
+#botõeshome #h_blog {
+	position: absolute;
+	left: 883px;
+	top: 2px;
+}
+#botõeshome #outline {
+	position: absolute;
+	left: 575px;
+	top: 0px;
+}
+#h_contato_f {
+	position: absolute;
+	left: 88px;
+	bottom: auto;
+	top: 427px;
+}
+#h_aluno_f {
+	position: absolute;
+	left: 371px;
+	top: 688px;
+}
+#h_galeria_f {
+	position: absolute;
+	top: 688px;
+	left: 653px;
+}
+#sobre{
+	position: absolute;
+	top: 145px;
+}
+#sobre_cont{
+	background-color: #000;
+	height: 245px;
+	width: 970px;
+	top: 166px;
+	position: absolute;
+}
+#preços{
+	top: 447px;
+	position: absolute;
+}
+#preços_cont{
+	background-color: #000;
+	position: absolute;
+	height: 100px;
+	width: 975px;
+	top: 470px;
+}
+#assista{
+	position: absolute;
+	top: 590px;
+}
+#inscr{
+	position: absolute;
+	top: 590px;
+	right: 0px;
+}
+@font-face {
+    font-family: orator;
+    src: url("OratorStd.otf");
+    font-weight:600;
+}
+#sobre_cont {
+	font-family: orator;
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px;
+	line-height: normal;
+}
+#linha1 {
+	padding-left: 60px;
+}
+#preços_cont {
+	font-family: orator;
+	color: #FFF;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+#bfinal {
+	position: absolute;
+	width: 990px;
+	background-color: #000;
+	height: 45px;
+	left: 0px;
+	top: 745px;
+}

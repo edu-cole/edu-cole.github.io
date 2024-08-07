@@ -1,0 +1,130 @@
+#conteiner #fundo {
+	background-image: none;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: auto;
+	width: auto;
+	border-top-style: 10;
+	border-right-style: 10;
+	border-bottom-style: none;
+	border-left-style: none;
+	left: 10px;
+	top: 10px;
+}
+#botõeshome   {
+}
+#botõeshome #h_home   {
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 3px;
+	right: auto;
+	left: 150px;
+}
+#botõeshome #h_vitrine   {
+	position: absolute;
+	left: 349px;
+	top: 2px;
+}
+#botõeshome #h_curso {
+	position: absolute;
+	left: 611px;
+	top: 2px;
+}
+#botõeshome #h_blog {
+	position: absolute;
+	left: 883px;
+	top: 2px;
+}
+#botõeshome #outline {
+	position: absolute;
+	left: 109px;
+	top: 0px;
+}
+#h_contato_f {
+	position: absolute;
+	left: 88px;
+	bottom: auto;
+	top: 688px;
+}
+#h_aluno_f {
+	position: absolute;
+	left: 371px;
+	top: 688px;
+}
+#h_galeria_f {
+	position: absolute;
+	top: 688px;
+	left: 653px;
+}
+#home #lightboxx {
+	background-color: #000;
+	height: 397px;
+	width: 990px;
+	position: absolute;
+	left: 3px;
+	top: 130px;
+	padding: 0px;
+}
+#home #lightboxx #seta_e{
+	top: 153px;
+	position: absolute;
+	left: 14px;
+}
+#home #lightboxx #seta_d{
+	position: absolute;
+	top: 153px;
+	right: 14px;
+}
+#bolinha1 {
+	position: absolute;
+	left: 4px;
+	top: 539px;
+}
+#bolinha2 {
+	position: absolute;
+	top: 539px;
+	left: 31px;
+}
+#bolinha3 {
+	position: absolute;
+	top: 539px;
+	left: 57px;
+}
+#slogan {
+	background-color: #000;
+	height: 111px;
+	width: 990px;
+	position: absolute;
+	top: 566px;
+	left: 3px;
+	color: #FFF;
+	font-family: orator;
+	font-size: 18px;
+	vertical-align: middle;
+	white-space: normal;
+}
+#slogant {
+	position: relative;
+	top: 5px;
+	left: 83px;
+}
+@font-face {
+    font-family: orator;
+    src: url("OratorStd.otf");
+    font-weight:600;
+}
+
+#bfinal {
+	position: absolute;
+	width: 990px;
+	background-color: #000;
+	height: 45px;
+	left: 10px;
+	top: 755px;
+}
+#inscr {
+	position: absolute;
+	left: 5px;
+	top: 180px;
+}

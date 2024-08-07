@@ -1,0 +1,111 @@
+#conteiner #fundo {
+	background-image: none;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: auto;
+	width: auto;
+	left: 10px;
+	top: 10px;
+}
+#botõeshome   {
+}
+#botõeshome #h_home   {
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 3px;
+	right: auto;
+	left: 150px;
+}
+#botõeshome #h_vitrine   {
+	position: absolute;
+	left: 349px;
+	top: 2px;
+}
+#botõeshome #h_curso {
+	position: absolute;
+	left: 611px;
+	top: 2px;
+}
+#botõeshome #h_blog {
+	position: absolute;
+	left: 883px;
+	top: 2px;
+}
+#outline{
+	position: absolute;
+	top: 0px;
+	left: auto;
+	right: 0px;
+}
+#h_contato_f {
+	position: absolute;
+	left: 88px;
+	bottom: auto;
+	top: 688px;
+}
+#h_aluno_f {
+	position: absolute;
+	left: 370px;
+	top: 688px;
+}
+#h_galeria_f {
+	position: absolute;
+	top: 688px;
+	left: 652px;
+}
+#conteúdo{
+	position: absolute;
+	top: 140px;
+}
+#vídeo{
+	position: absolute;
+	height: 350px;
+	width: 523px;
+	top: 220px;
+}
+#play {
+	text-align: left;
+	position: absolute;
+	left: 235px;
+	top: 135px;
+}
+#descr{
+	background-color: #F2C706;
+	position: absolute;
+	height: 350px;
+	width: 455px;
+	top: 205px;
+	left: 545px;
+}
+#curiosidade{
+	background-color: #F2C706;
+	position: absolute;
+	height: 111px;
+	width: 900px;
+	top: 562px;
+	font-family: orator;
+	font-size: 18px;
+	line-height: 35px;
+	padding-left: 90px;
+	padding-top: 5px;
+}
+#fatos1 {
+}
+#fatos2 {
+}
+#fatos3 {
+}
+@font-face {
+    font-family: orator;
+    src: url("OratorStd.otf");
+    font-weight:600;
+}
+#bfinal {
+	position: absolute;
+	width: 990px;
+	background-color: #000;
+	height: 45px;
+	left: 10px;
+	top: 755px;
+}

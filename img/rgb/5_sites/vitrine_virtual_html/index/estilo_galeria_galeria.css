@@ -1,0 +1,90 @@
+#conteiner #fundo {
+	background-image: none;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: auto;
+	width: auto;
+	left: 10px;
+	top: 10px;
+}
+#botõeshome   {
+}
+#botõeshome #h_home   {
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 3px;
+	right: auto;
+	left: 150px;
+}
+#botõeshome #h_vitrine   {
+	position: absolute;
+	left: 349px;
+	top: 2px;
+}
+#botõeshome #h_curso {
+	position: absolute;
+	left: 611px;
+	top: 2px;
+}
+#botõeshome #h_blog {
+	position: absolute;
+	left: 883px;
+	top: 2px;
+}
+#h_contato_f {
+	position: absolute;
+	left: 85px;
+	bottom: auto;
+	top: 688px;
+}
+#h_aluno_f {
+	position: absolute;
+	left: 368px;
+	top: 688px;
+}
+#foto_gal {
+	position: absolute;
+	top: 485px;
+	right: 86px;
+}
+#h_galeria_f {
+	position: absolute;
+	top: 425px;
+	left: 650px;
+}
+#aluno1_1{
+	position: absolute;
+	top: 166px;
+	background-color: #000;
+	height: 154px;
+	width: 990px;
+}
+#aluno1_2{
+	position: absolute;
+	height: 154px;
+	width: 990px;
+	top: 332px;
+	background-color: #000;
+}
+#aluno1_3{
+	background-color: #000;
+	position: absolute;
+	height: 154px;
+	width: 990px;
+	top: 502px;
+}
+@font-face {
+    font-family: orator;
+    src: url("OratorStd.otf");
+    font-weight:600;
+}
+
+#bfinal {
+	position: absolute;
+	width: 990px;
+	background-color: #000;
+	height: 45px;
+	left:0px;
+	top: 745px;
+}
