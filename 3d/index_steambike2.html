@@ -56,7 +56,7 @@ function main() {
 	const scene = new THREE.Scene();
 	new RGBELoader()
     .setPath( 'bg_hdr/' )
-    .load( '23.jpg', function ( texture ) {
+    .load( '23_3k.hdr', function ( texture ) {
       texture.mapping = THREE.EquirectangularReflectionMapping;
       scene.background = texture;
       scene.environment = texture;
