@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Steambike - HTML de 3D - Edu Cole</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				margin: 0;
+				touch-action: none;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+
+		<canvas id="c"></canvas>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://threejs.org/build/three.module.js",
+					"three/addons/": "https://threejs.org/examples/jsm/"
+				}
+			}
+		</script>
+
+		<script type="module">
+
+			import * as THREE from 'three';
+			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
+			import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+			import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
+
+			let camera, scene, renderer, controls;
+			let cubeCamera;
+
+			init();
+			animate();
+
+			function init() {
+
+				const canvas = document.querySelector( '#c' );
+				renderer = new THREE.WebGLRenderer( { antialias: true, canvas } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.toneMapping = THREE.ACESFilmicToneMapping;
+
+				camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 100 );
+				camera.position.set(0, 0.5, 7);
+
+				scene = new THREE.Scene();
+
+				// Background HDR
+				new RGBELoader()
+					.setPath( 'bg_hdr/' )
+					.load( 'hdr_steambike_esboco3.hdr', function ( texture ) {
+						texture.mapping = THREE.EquirectangularReflectionMapping;
+						scene.background = texture;
+						scene.environment = texture;
+					});
+
+				// Luzes
+				const ambientLight = new THREE.AmbientLight(0xB1E1FF);
+				scene.add(ambientLight);
+
+				const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+				directionalLight.position.set(0, 100, 0).normalize();
+				scene.add(directionalLight);
+
+				// Carregar o OBJ com materiais
+				const mtlLoader = new MTLLoader();
+				mtlLoader.load( 'steambike3.mtl', ( mtl ) => {
+					mtl.preload();
+					const objLoader = new OBJLoader();
+					objLoader.setMaterials( mtl );
+					objLoader.load( 'steambike7.obj', ( root ) => {
+						root.traverse((child) => {
+							if (child.isMesh) {
+								child.material.side = THREE.DoubleSide;
+								root.position.set(0, -0.5, 0);
+								envMap: scene.environment;
+            // crome
+            if (child.material.name === 'crome') {
+			child.material = new THREE.MeshStandardMaterial({
+            color: 0x5b5b5b,
+            metalness: 1,
+            roughness: 0.02, // Ajuste conforme necessário
+            envMap: scene.environment, // Use o mesmo ambiente HDR para reflexões
+          });
+			child.material.side = THREE.DoubleSide;
+}
+		// red
+            if (child.material.name === 'red_metal') {
+			child.material = new THREE.MeshStandardMaterial({
+            color: 0xc00000,
+            metalness: 1,
+            roughness: 0.02, // Ajuste conforme necessário
+            envMap: scene.environment, // Use o mesmo ambiente HDR para reflexões
+          });
+			child.material.side = THREE.DoubleSide;
+}
+		// copper
+            if (child.material.name === 'copper') {
+			child.material = new THREE.MeshStandardMaterial({
+            color: 0x9b5400,
+            metalness: 1,
+            roughness: 0.02, // Ajuste conforme necessário
+            envMap: scene.environment, // Use o mesmo ambiente HDR para reflexões
+          });
+			child.material.side = THREE.DoubleSide;
+}	
+
+		// pneu
+
+	    if (child.material.name === 'pneu2') {
+  		const tLoad = new THREE.TextureLoader();
+
+  		const albt = tLoad.load('tiremot_edit_1K_albedo_s2.jpg');
+  		albt.repeat.set(0.1, 1); // Reescalona a textura
+  		albt.offset.set(0, 0); // Reposiciona a textura
+
+  		const bumpt = tLoad.load('tiremot_1K_roughness.jpg');
+  		bumpt.repeat.set(0.1, 1); // Reescalona o bump map
+  		bumpt.offset.set(0, 0); // Reposiciona o bump map
+
+  		child.material = new THREE.MeshStandardMaterial({
+    	map: albt,
+    	roughness: 0.75, 
+    	bumpMap: bumpt,
+    	envMap: scene.environment, // Use o mesmo ambiente HDR para reflexões
+  });
+  
+  child.material.side = THREE.DoubleSide; // Se necessário
+}	
+		// luz_traseira
+            if (child.material.name === 'luz_traseira') {
+			child.material = new THREE.MeshStandardMaterial({
+            color: 0xFF0000,
+            emissive: 0xFF0000,
+            emissiveIntensity: 0.5,
+            metalness: 0.1,
+            roughness: 0.5, // Ajuste conforme necessário
+            envMap: scene.environment, // Use o mesmo ambiente HDR para reflexões
+          });
+			child.material.side = THREE.DoubleSide;
+}		
+
+		// luz_pisca
+            if (child.material.name === 'luz_pisca') {
+			child.material = new THREE.MeshStandardMaterial({
+            color: 0xff9500,
+            emissive: 0xff9500,
+            emissiveIntensity: 0.5,
+            metalness: 0.1,
+            roughness: 0.5, // Ajuste conforme necessário
+            envMap: scene.environment, // Use o mesmo ambiente HDR para reflexões
+          });
+			child.material.side = THREE.DoubleSide;
+}
+
+		// 18 - Default
+            if (child.material.name === '18___Default') {
+			child.material = new THREE.MeshStandardMaterial({
+            color: 0xffc680,
+            metalness: 0.9,
+            roughness: 0.1, // Ajuste conforme necessário
+            envMap: scene.environment, // Use o mesmo ambiente HDR para reflexões
+          });
+			child.material.side = THREE.DoubleSide;
+}
+
+			// luz_pisca
+            if (child.material.name === 'stand_plataforma') {
+			const tLoad2 = new THREE.TextureLoader();
+
+  		const albt2 = tLoad2.load('10eb4f3be7b1.jpg');
+  		albt2.repeat.set(0.2, 0.2); // Reescalona a textura
+  		albt2.offset.set(0, 0); // Reposiciona a textura
+
+  		child.material = new THREE.MeshStandardMaterial({
+    	map: albt2,
+    	roughness: 0.25,
+    	metalness: 0.1,
+    	envMap: scene.environment, // Use o mesmo ambiente HDR para reflexões
+  });
+  
+  child.material.side = THREE.DoubleSide; // Se necessário
+}
+
+		// fim dos mtls extras
+
+
+							}
+						});
+						scene.add(root);
+					});
+				});
+
+				// OrbitControls
+				controls = new OrbitControls( camera, renderer.domElement );
+				controls.autoRotate = true;
+				controls.autoRotateSpeed = 2.0;
+
+				window.addEventListener( 'resize', onWindowResized );
+
+				// Cube Camera para reflexões
+				cubeCamera = new THREE.CubeCamera( 1, 1000, new THREE.WebGLCubeRenderTarget( 256, { type: THREE.HalfFloatType } ) );
+			}
+
+			function onWindowResized() {
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+			}
+
+			function animate( msTime ) {
+				const time = msTime / 1000;
+
+				// Atualizar a câmera cubo para reflexões
+				cubeCamera.update( renderer, scene );
+
+				// Atualizar os controles
+				controls.target.set(0, 1, 0);
+				controls.update();
+
+				// Renderizar a cena
+				renderer.render( scene, camera );
+
+				requestAnimationFrame( animate );
+			}
+
+		</script>
+
+	</body>
+</html>
