@@ -75,7 +75,7 @@
 					mtl.preload();
 					const objLoader = new OBJLoader();
 					objLoader.setMaterials( mtl );
-					objLoader.load( 'steambike8_low1.obj', ( root ) => {
+					objLoader.load( 'steambike8_low3.obj', ( root ) => {
 						root.traverse((child) => {
 							if (child.isMesh) {
 								child.material.side = THREE.DoubleSide;
