@@ -1,0 +1,317 @@
+body {
+                margin: 0;
+                touch-action: none;
+                overflow: hidden;
+            }
+
+/* BOTÕES DE NAVEGAÇÃO */
+
+.nav_but {
+
+    width: 70px;
+    height: 70px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.8;
+
+    cursor: pointer;
+
+    appearance: none;
+
+}
+
+.nav_but:hover {
+    opacity: 1;
+
+}
+
+#home_but {
+background-image: url("../imgs/home_deact.png");
+}
+#home_but:hover {
+background-image: url("../imgs/home_hover.png");
+}
+
+#back_but {
+background-image: url("../imgs/up_back_deact.png");
+}
+#back_but:hover {
+background-image: url("../imgs/up_back_hover.png");
+}
+
+#gal_list_but {
+background-image: url("../imgs/gal_list_deact.png");
+}
+#gal_list_but:hover {
+background-image: url("../imgs/gal_list_hover.png");
+}
+
+#prev_but {
+background-image: url("../imgs/prev_deact.png");
+}
+#prev_but:hover {
+background-image: url("../imgs/prev_hover.png");
+}
+
+#next_but {
+background-image: url("../imgs/next_deact.png");
+}
+#next_but:hover {
+background-image: url("../imgs/next_hover.png");
+}
+
+#reset_but {
+background-image: url("../imgs/reset_deact.png");
+}
+#reset_but:hover {
+background-image: url("../imgs/reset_hover.png");
+}
+
+#fullscreen_but {
+background-image: url("../imgs/full_deact.png");
+}
+#fullscreen_but:hover {
+background-image: url("../imgs/full_hover.png");
+}
+#fullscreen_but.act {
+background-image: url("../imgs/full_act.png");
+}
+
+/* CANTO SUPERIOR ESQUERDO */
+
+#nav_left {
+
+    position: fixed;
+
+    top: 20px;
+    left: 20px;
+
+    display: flex;
+
+    gap: 8px;
+
+    z-index: 10;
+
+}
+
+
+/* CANTO SUPERIOR DIREITO */
+
+#nav_right {
+
+    position: fixed;
+
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 8px;
+
+    z-index: 10;
+
+}
+
+
+/* ANTERIOR / POSTERIOR */
+
+#next_prev {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+/* RESET / FULLSCREEN */
+
+#system_but {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+/* BOTÕES DE VISUALIZAÇÃO */ 
+#v_ctr {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 8px;
+
+    z-index: 10;
+}
+
+.v_butb {
+    width: 70px;
+    height: 70px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    background-image: url("../imgs/beauty_vis_deact.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    cursor: pointer;
+
+    appearance: none;
+    opacity: 0.8;
+}
+
+
+.v_butb:hover {
+    background-image: url("../imgs/beauty_vis_hover.png");
+    opacity: 1;
+}
+
+
+.v_butb.act {
+    background-image: url("../imgs/beauty_vis_act.png");
+
+    pointer-events: none;
+    opacity: 1;
+}
+
+.v_butc {
+    width: 70px;
+    height: 70px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    background-image: url("../imgs/clay_vis1_deact.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    cursor: pointer;
+
+    appearance: none;
+}
+
+
+.v_butc:hover {
+    background-image: url("../imgs/clay_vis1_hover.png");
+}
+
+
+.v_butc.act {
+    background-image: url("../imgs/clay_vis1_act.png");
+
+    pointer-events: none;
+}
+
+.v_butw {
+    width: 70px;
+    height: 70px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    background-image: url("../imgs/wire_vis_deact.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    cursor: pointer;
+
+    appearance: none;
+}
+
+
+.v_butw:hover {
+    background-image: url("../imgs/wire_vis_hover.png");
+}
+
+
+.v_butw.act {
+    background-image: url("../imgs/wire_vis_act.png");
+
+    pointer-events: none;
+}
+
+.v_bute {
+    width: 70px;
+    height: 70px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    background-image: url("../imgs/edge_vis_deact.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.8;
+
+    cursor: pointer;
+
+    appearance: none;
+}
+
+
+.v_bute:hover {
+    background-image: url("../imgs/edge_vis_hover.png");
+    opacity: 1;
+}
+
+
+.v_bute.act {
+    background-image: url("../imgs/edge_vis_act.png");
+    opacity: 1;
+}
+
+/* VELOCIDADE DE ROTAÇÃO */
+
+#anim_speed {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 1;
+    cursor: pointer;
+    appearance: none;
+}
