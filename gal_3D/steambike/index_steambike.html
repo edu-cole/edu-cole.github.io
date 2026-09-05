@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>Steambike - HTML de 3D - Edu Cole</title>
+		<link href="../css/gal_3D.css" rel="stylesheet">
+	</head>
+	<body>
+		<canvas id="c"></canvas>
+
+		<div id="nav_left">
+	    <button class="nav_but" id="home_but"></button>
+	    <button class="nav_but" id="back_but"></button>
+	    <button class="nav_but" id="gal_list_but"></button>
+		</div>
+		
+		<div id="nav_right">
+	    <div id="next_prev">
+        <button class="nav_but" id="prev_but"></button>
+        <button class="nav_but" id="next_but"></button>
+	    </div>
+
+	    <div id="system_but">
+        <button class="nav_but" id="reset_but"></button>
+        <button class="nav_but" id="fullscreen_but"></button>
+	    </div>
+		</div>
+
+		<!-- carregamentos botões -->
+		<div id="v_ctr">
+    <button class="v_butb act" data-mode="beauty"></button>
+    <button class="v_butc" data-mode="clay"></button>
+    <button class="v_butw" data-mode="wireframe"></button>
+    <button class="v_bute" data-mode="edges"></button>
+    <button id="anim_speed"></button>
+		</div>
+
+<script type="importmap">
+			{
+				"imports": {
+					"three": "https://threejs.org/build/three.module.js",
+					"three/addons/": "https://threejs.org/examples/jsm/"
+				}
+			}
+		</script>
+
+		<!-- carregamento JS externo 1 -->
+		<script type="module" src="gal_3D_steambike.js"></script>
+
+	</body>
+</html>
