@@ -30,11 +30,11 @@ function animateCards() {
 
 
         const rotateY =
-            mouseX * 3 * strength;
+            mouseX * 5 * strength;
 
 
         const rotateX =
-            mouseY * -3 * strength;
+            mouseY * -5 * strength;
 
 
         card.style.transform =
