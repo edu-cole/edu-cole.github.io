@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>HuRobo - HTML de 3D - Edu Cole</title>
+		<link href="../css/gal_3D.css" rel="stylesheet">
+	</head>
+	<body>
+		<canvas id="c"></canvas>
+
+		<div id="nav_left">
+		<div id="begin">
+	    <a class="nav_but" id="home_but"></a>
+	    <a class="nav_but" id="back_but"></a>
+		</div>
+
+		<div id="more">
+	    <a class="nav_but" id="gal_list_but"></a>
+	    <button class="nav_but" id="info_but"></button>
+		</div>
+		
+		<div id="nav_right">
+	    <div id="next_prev">
+        <a class="nav_but" id="prev_but"></a>
+        <a class="nav_but" id="next_but"></a>
+	    </div>
+
+	    <div id="system_but">
+        <button class="nav_but" id="reset_but"></button>
+        <button class="nav_but" id="fullscreen_but"></button>
+	    </div>
+		</div>
+
+		<!-- JANELA DE INFORMAÇÕES -->
+
+		<div id="info_overlay">
+		    <div id="info_window">
+		    <button id="info_lang" aria-label="Mudar idioma"></button>
+	        <button id="info_close" aria-label="Fechar informações">×</button>
+
+	        <!-- PT -->
+	        <div id="info_content_pt"><h2>HuRobo - Robô humanóide</h2>
+            <div class="info_data">
+            	<p><strong>Nome genérico da modelagem:</strong> Robô</p>
+            	<p><strong>Nome fictício:</strong> HuRobo</p>
+                <p><strong>Modelagem original:</strong> Junho de 2018</p>
+                <p><strong>Softwares utilizados:</strong> 3ds Max</p>
+                <p><strong>Render original:</strong> Scanline Render</p>
+                <p><strong>Geometria otimizada:</strong> 89.545 polígonos e 56.018 vértices</p>
+                <p><strong>Dimensões aproximadas imaginadas:</strong> 37 × 50 × 180 cm</p>
+                <p><strong>Formato otimizado publicado:</strong> OBJ de 12 MB</p>
+                <p><strong>Versão otimizada para web:</strong> Setembro de 2026</p>
+            </div>
+            <h3>Links</h3>
+            <div class="info_links">
+                <a target="_blank" rel="noopener noreferrer">Ainda sem publicações</a>
+            </div>
+            <h3>Descrição</h3>
+            <p class="info_description">
+                Com o objetivo de criar um robô humanóide, para gerar publicações nas redes da
+                empresa 2C3D, acabei modelando esse robô com proporções humanas, 
+                me inspirando em robôs famosos, principalmente o Chappie, do filme homônimo de 2015.
+
+                Após pesquisar por algumas referências, passei pelos
+                processos de modelagem, texturização, renderização,
+                criação da música e edição do vídeo e gif.
+            </p>
+        </div>
+
+        	<!-- EN -->
+	        <div id="info_content_en"><h2>HuRobo - Humanoid robot</h2>
+            <div class="info_data">
+            	<p><strong>Generic name of the modeling:</strong> SteamBike</p>
+            	<p><strong>Fictitious name:</strong> HuRobo</p>
+                <p><strong>Original modeling:</strong> June 2018</p>
+                <p><strong>Softwares used:</strong> 3ds Max</p>
+                <p><strong>Original render:</strong> Scanline Render</p>
+                <p><strong>Optimized geometry:</strong> 89.545 polygons and 56.018 vertices</p>
+                <p><strong>Estimated approximate dimensions:</strong> 37 × 50 × 180 cm</p>
+                <p><strong>Published optimized format:</strong> OBJ of 12 MB</p>
+                <p><strong>Web-optimized version:</strong> September 2026</p>
+            </div>
+            <h3>Links</h3>
+            <div class="info_links">
+                <a target="_blank" rel="noopener noreferrer">No posts yet</a>
+            </div>
+            <h3>Description</h3>
+            <p class="info_description">
+                With the goal of creating a humanoid robot to generate social media content for the company 2C3D, I modeled this robot with human proportions, drawing inspiration from famous robots, most notably Chappie, from the 2015 film of the same name.
+
+                After researching references, I went through the processes of modeling, texturing, rendering, composing the music, and editing the video and GIF.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+		<!-- carregamentos botões -->
+		<div id="v_ctr">
+    <button class="v_butb act" data-mode="beauty"></button>
+    <button class="v_butc" data-mode="clay"></button>
+    <button class="v_butw" data-mode="wireframe"></button>
+    <button class="v_bute" data-mode="edges"></button>
+    <button id="anim_speed"></button>
+		</div>
+
+<script type="importmap">
+			{
+				"imports": {
+					"three": "https://threejs.org/build/three.module.js",
+					"three/addons/": "https://threejs.org/examples/jsm/"
+				}
+			}
+		</script>
+
+		<!-- carregamento JS externo 1 -->
+		<script type="module" src="gal_3D_hurobo.js"></script>
+
+	</body>
+</html>
