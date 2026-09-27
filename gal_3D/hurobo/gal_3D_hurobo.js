@@ -261,7 +261,7 @@ if (child.material.name === 'pes') {
 
 new RGBELoader()
     .setPath('bg_hdr/')
-    .load(`hdr_${nomeExclu}_low4.hdr`, function (lowResTexture) {
+    .load(`hdr_${nomeExclu}_low.hdr`, function (lowResTexture) {
 
         lowResTexture.mapping = THREE.EquirectangularReflectionMapping;
 
@@ -277,7 +277,7 @@ new RGBELoader()
 
         new RGBELoader()
             .setPath('bg_hdr/')
-            .load(`hdr_${nomeExclu}_high4.hdr`, function (highResTexture) {
+            .load(`hdr_${nomeExclu}_high.hdr`, function (highResTexture) {
 
                 highResTexture.mapping = THREE.EquirectangularReflectionMapping;
 
@@ -293,7 +293,7 @@ new RGBELoader()
 
                 new RGBELoader()
                     .setPath('bg_hdr/')
-                    .load(`hdr_${nomeExclu}_ultra_high_4k_down_size.hdr`, function (ultraHighResTexture) {
+                    .load(`hdr_${nomeExclu}_ultra_high_4k.hdr`, function (ultraHighResTexture) {
 
                         ultraHighResTexture.mapping =
                             THREE.EquirectangularReflectionMapping;
