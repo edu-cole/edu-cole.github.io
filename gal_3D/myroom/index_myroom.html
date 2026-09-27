@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>MyRoom - HTML de 3D - Edu Cole</title>
+		<link href="../css/gal_3D.css" rel="stylesheet">
+	</head>
+	<body>
+		<canvas id="c"></canvas>
+
+		<div id="nav_left">
+		<div id="begin">
+	    <a class="nav_but" id="home_but"></a>
+	    <a class="nav_but" id="back_but"></a>
+		</div>
+
+		<div id="more">
+	    <a class="nav_but" id="gal_list_but"></a>
+	    <button class="nav_but" id="info_but"></button>
+		</div>
+		
+		<div id="nav_right">
+	    <div id="next_prev">
+        <a class="nav_but" id="prev_but"></a>
+        <a class="nav_but" id="next_but"></a>
+	    </div>
+
+	    <div id="system_but">
+        <button class="nav_but" id="reset_but"></button>
+        <button class="nav_but" id="fullscreen_but"></button>
+	    </div>
+		</div>
+
+		<!-- JANELA DE INFORMAÇÕES -->
+
+		<div id="info_overlay">
+		    <div id="info_window">
+		    <button id="info_lang" aria-label="Mudar idioma"></button>
+	        <button id="info_close" aria-label="Fechar informações">×</button>
+
+	        <!-- PT -->
+	        <div id="info_content_pt"><h2>Meu Quarto - representação do ambiente real</h2>
+            <div class="info_data">
+            	<p><strong>Nome genérico da modelagem:</strong> Meu Quarto</p>
+            	<p><strong>Nome fictício:</strong> Meu Quarto</p>
+                <p><strong>Modelagem original:</strong> Março de 2022</p>
+                <p><strong>Softwares utilizados:</strong> 3ds Max</p>
+                <p><strong>Render original:</strong> Corona Render</p>
+                <p><strong>Geometria otimizada:</strong> 5.949.143 polígonos e 3.577.815 vértices</p>
+                <p><strong>Dimensões aproximadas imaginadas:</strong> 5.07 × 4.245 × 2.65 m</p>
+                <p><strong>Formato otimizado publicado:</strong> MAX de 251 MB - HDR de 24 MB</p>
+                <p><strong>Versão otimizada para web:</strong> Setembro de 2026</p>
+            </div>
+            <h3>Links</h3>
+            <div class="info_links">
+                <a href="https://youtu.be/fVA4d4eGarI?si=62An_qgzxbOtUmoG" target="_blank" rel="noopener noreferrer">Vídeo original no YouTube</a>
+                <a href="https://www.instagram.com/p/CoVWyQ-Orbz/" target="_blank" rel="noopener noreferrer">Vídeo original no Instagram</a>
+            </div>
+            <h3>Descrição</h3>
+            <p class="info_description">
+                Por conta de termos de confidencialidade dos projetos, não posso divulgar imagens dos projetos nos quais tenho trabalhado desde 2021. No caso modelando em 3D tanto exteriores, quanto interiores arquitetônicos.<br><br>
+                Para divulgar o meu trabalho, modelei o meu quarto como exemplo das modelagens que tenho feito na área de "archviz" (architecture visualization - ou visualização arquitetônica, ou ainda maquete virtual...).<br><br>
+                Normalmente recebo as plantas e cortes em Autocad, junto com algumas referências, a partir desses arquivos, pesquiso os materiais e costumo modelar: alvenarias, porta(s), janela(s), rodapés, soleira(s), piso(s), forro(s), tábica(s), luze(s), adesivo(s), alguns quadro(s) e marcenaria(s).<br><br>
+                Após a modelagem principal ser aprovada, recebo os arquivos de decoração já modelados e posiciono eles, eventualmente ajustando as escalas e cores.<br><br>
+                Depois de aprovada a modelagem completa, confiro alguns detalhes finais, posiciono a maquete de acordo com a arquitetura geral (normalmente de acordo com a torre), realizo a entrega e gero a NF como MEI; tudo feito de modo remoto.<br><br>
+                Estes trabalhos de archviz, modelo no programa 3DsMax, com materiais e iluminação do Corona Render e com o uso de alguns plugins como: Floorgenerator, Forest iTooSoft,  Railclone iTooSoft, Checklist (Relink Bitmaps e Collect Assets) e Sini Tools (Forensic). Eventualmente também uso o Photoshop e o Illustrator, para preparar / gerar imagens e vetores.
+            </p>
+        </div>
+
+        	<!-- EN -->
+	        <div id="info_content_en"><h2>Steamhouse - Steam-powered mobile home</h2>
+            <div class="info_data">
+            	<p><strong>Generic name of the modeling:</strong> SteamHouse</p>
+            	<p><strong>Fictitious name:</strong> Howl's Moving House</p>
+                <p><strong>Original modeling:</strong> April 2019</p>
+                <p><strong>Softwares used:</strong> 3ds Max</p>
+                <p><strong>Original render:</strong> Scanline Render</p>
+                <p><strong>Optimized geometry:</strong> 5.949.143 polygons and 3.577.815 vertices</p>
+                <p><strong>Estimated approximate dimensions:</strong>  5.07 × 4.245 × 2.65 m</p>
+                <p><strong>Published optimized format:</strong> MAX of 251 MB - HDR of 24 MB</p>
+                <p><strong>Web-optimized version:</strong> September 2026</p>
+            </div>
+            <h3>Links</h3>
+            <div class="info_links">
+                <a href="https://youtu.be/fVA4d4eGarI?si=62An_qgzxbOtUmoG" target="_blank" rel="noopener noreferrer">Original video on YouTube</a>
+                <a href="https://www.instagram.com/p/CoVWyQ-Orbz/" target="_blank" rel="noopener noreferrer">Original video on Instagram</a>
+            </div>
+            <h3>Description</h3>
+            <p class="info_description">
+                Due to projects confidentiality agreements, I cannot share images of the projects I have been working on since 2021. Which involve 3D modeling of both architectural exteriors and interiors.<br><br>
+                To showcase my work, I modeled my bedroom as an example of the modeling I’ve been doing in the field of "archviz" (architectural visualization or virtual architectural modeling).<br><br>
+                I usually receive floor plans and sections in AutoCAD, along with some reference materials; based on these files, I research the materials and typically model the: masonry, doors, windows, baseboards, thresholds, flooring, ceilings, shadow gaps, lighting, decals, some artwork and millwork.<br><br>
+                Once the main modeling is approved, I receive the pre-modeled decor files and position them, occasionally adjusting their scale and color.<br><br>
+                Once the complete model is approved, I check a few final details, position the model according to the overall architecture (usually aligned with the tower), deliver the work and issue the invoice as a MEI; everything is done remotely.<br><br>
+                For these archviz projects, I model in 3ds Max using Corona Renderer for materials and lighting, along with plugins such as FloorGenerator, iTooSoft Forest Pack, iTooSoft RailClone, Checklist (Relink Bitmaps and Collect Assets), and Sini Tools (Forensic). I also occasionally use Photoshop and Illustrator to prepare or generate images and vectors.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+		<!-- carregamentos botões -->
+		<div id="v_ctr">
+        <button id="anim_speed"></button>
+		</div>
+
+<script type="importmap">
+			{
+				"imports": {
+					"three": "https://threejs.org/build/three.module.js",
+					"three/addons/": "https://threejs.org/examples/jsm/"
+				}
+			}
+		</script>
+
+		<!-- carregamento JS externo 1 -->
+		<script type="module" src="gal_3D_myroom.js"></script>
+
+	</body>
+</html>
