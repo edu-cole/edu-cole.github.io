@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>Smart Table - HTML de 3D - Edu Cole</title>
+		<link href="../css/gal_3D.css" rel="stylesheet">
+	</head>
+	<body>
+		<canvas id="c"></canvas>
+
+		<div id="nav_left">
+		<div id="begin">
+	    <a class="nav_but" id="home_but"></a>
+	    <a class="nav_but" id="back_but"></a>
+		</div>
+
+		<div id="more">
+	    <a class="nav_but" id="gal_list_but"></a>
+	    <button class="nav_but" id="info_but"></button>
+		</div>
+		
+		<div id="nav_right">
+	    <div id="next_prev">
+        <a class="nav_but" id="prev_but"></a>
+        <a class="nav_but" id="next_but"></a>
+	    </div>
+
+	    <div id="system_but">
+        <button class="nav_but" id="reset_but"></button>
+        <button class="nav_but" id="fullscreen_but"></button>
+	    </div>
+		</div>
+
+		<!-- JANELA DE INFORMAÇÕES -->
+
+		<div id="info_overlay">
+		    <div id="info_window">
+		    <button id="info_lang" aria-label="Mudar idioma"></button>
+	        <button id="info_close" aria-label="Fechar informações">×</button>
+
+	        <!-- PT -->
+	        <div id="info_content_pt"><h2>Smart Table - workstation</h2>
+            <div class="info_data">
+            	<p><strong>Nome genérico da modelagem:</strong> Smart Table</p>
+            	<p><strong>Nome fictício:</strong> PreMinority</p>
+                <p><strong>Modelagem original:</strong> Julho de 2020</p>
+                <p><strong>Softwares utilizados:</strong> 3ds Max</p>
+                <p><strong>Render original:</strong> Scanline Render</p>
+                <p><strong>Geometria otimizada:</strong> 180.618 polígonos e 142.224 vértices</p>
+                <p><strong>Dimensões aproximadas imaginadas:</strong> 250 × 450 × 180 cm</p>
+                <p><strong>Formato otimizado publicado:</strong> OBJ de 18 MB</p>
+                <p><strong>Versão otimizada para web:</strong> Setembro de 2026</p>
+            </div>
+            <h3>Links</h3>
+            <div class="info_links">
+                <a href="https://youtu.be/A7qd7Dh8IW8?si=NS-J-0_XsJjJKupK" target="_blank" rel="noopener noreferrer">Vídeo original no YouTube</a>
+                <a href="https://www.instagram.com/p/CZb-E6Hr87I/" target="_blank" rel="noopener noreferrer">Vídeo original no Instagram</a>
+            </div>
+            <h3>Descrição</h3>
+            <p class="info_description">
+                Com o objetivo de criar uma mesa smart, com tudo que imaginava sendo útil embutido nela, para gerar publicações nas redes da empresa 2C3D, acabei modelando essa mesa, inspirado em referências diversas.
+
+                Após pesquisar por algumas referências, passei pelos
+                processos de modelagem, texturização, renderização,
+                criação da música e edição do vídeo e gif.
+            </p>
+        </div>
+
+        	<!-- EN -->
+	        <div id="info_content_en"><h2>Smart Table - workstation</h2>
+            <div class="info_data">
+            	<p><strong>Generic name of the modeling:</strong> Smart Table</p>
+            	<p><strong>Fictitious name:</strong> PreMinority</p>
+                <p><strong>Original modeling:</strong> July 2020</p>
+                <p><strong>Softwares used:</strong> 3ds Max</p>
+                <p><strong>Original render:</strong> Scanline Render</p>
+                <p><strong>Optimized geometry:</strong> 180.618 polygons and 142.224 vertices</p>
+                <p><strong>Estimated approximate dimensions:</strong>  250 × 450 × 180 cm</p>
+                <p><strong>Published optimized format:</strong> OBJ of 18 MB</p>
+                <p><strong>Web-optimized version:</strong> September 2026</p>
+            </div>
+            <h3>Links</h3>
+            <div class="info_links">
+                <a href="https://youtu.be/A7qd7Dh8IW8?si=NS-J-0_XsJjJKupK" target="_blank" rel="noopener noreferrer">Original video on YouTube</a>
+                <a href="https://www.instagram.com/p/CZb-E6Hr87I/" target="_blank" rel="noopener noreferrer">Original video on Instagram</a>
+            </div>
+            <h3>Description</h3>
+            <p class="info_description">
+                With the goal of creating a smart table, incorporating everything I imagined to be useful embedded in it, to generate content for the 2C3D company's social media channels, I ended up modeling this table, drawing inspiration from various references.
+
+                After researching references, I went through the processes of modeling, texturing, rendering, composing the music, and editing the video and GIF.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+		<!-- carregamentos botões -->
+		<div id="v_ctr">
+    <button class="v_butb act" data-mode="beauty"></button>
+    <button class="v_butc" data-mode="clay"></button>
+    <button class="v_butw" data-mode="wireframe"></button>
+    <button class="v_bute" data-mode="edges"></button>
+    <button id="anim_speed"></button>
+		</div>
+
+<script type="importmap">
+			{
+				"imports": {
+					"three": "https://threejs.org/build/three.module.js",
+					"three/addons/": "https://threejs.org/examples/jsm/"
+				}
+			}
+		</script>
+
+		<!-- carregamento JS externo 1 -->
+		<script type="module" src="gal_3D_smart_table.js"></script>
+
+	</body>
+</html>
