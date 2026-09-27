@@ -1,0 +1,283 @@
+# 3ds Max Wavefront OBJ Exporter v0.99 - (c)2007 guruware
+# File Created: 15.09.2026 16:00:02
+
+newmtl sn_vidros
+	Kd 0.0000 0.0000 0.0000
+	Ks 1.0000 1.0000 1.0000
+	Tr 1.0000
+	d 0.0000
+	Tf 0.8776 0.9620 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.1200
+	Ni 1.5000
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+
+newmtl sn_metal_dark
+	Kd 0.2255 0.2255 0.2374
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.2900
+	Pm 1.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+
+newmtl sn_turbinas
+	Kd 0.2158 0.4020 1.0000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.2900
+	Pm 1.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+
+newmtl sn_piso_turbinas
+	Kd 0.5000 0.5000 0.5000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+	map_Kd B:\00_LIB_PESSOAL\0_texturas\WaterPlain0016_1_L_agua.jpg
+
+newmtl sn_metal
+	Kd 0.9140 0.9140 0.9200
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.2900
+	Pm 1.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+
+newmtl sn_asa1
+	Kd 0.5000 0.5000 0.5000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+	map_Kd B:\00_LIB_PESSOAL\0_texturas\dissolve_circulos3_azul2.jpg
+	bump B:\00_LIB_PESSOAL\0_texturas\dissolve_circulos3_azul2.jpg
+	map_bump B:\00_LIB_PESSOAL\0_texturas\dissolve_circulos3_azul2.jpg
+
+newmtl sn_asa2
+	Kd 0.5000 0.5000 0.5000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+	map_Kd B:\00_LIB_PESSOAL\0_texturas\clouds1.jpg
+	bump B:\00_LIB_PESSOAL\0_texturas\clouds1.jpg
+	map_bump B:\00_LIB_PESSOAL\0_texturas\clouds1.jpg
+
+newmtl sn_piso_salao
+	Kd 0.5000 0.5000 0.5000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+	map_Kd B:\00_LIB_PESSOAL\0_texturas\corona_assets\granito_granulado\branco_itaunas_3ce35fd70585.jpg
+
+newmtl sn_cobre
+	Kd 0.9260 0.3813 0.1266
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.1200
+	Pm 1.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+
+newmtl sn_asa3
+	Kd 0.5000 0.5000 0.5000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+	map_Kd B:\00_LIB_PESSOAL\0_texturas\dissolve_circulos4_2b.jpg
+
+newmtl sn_piso_deck
+	Kd 0.5000 0.5000 0.5000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+	map_Kd B:\00_LIB_PESSOAL\0_texturas\texturas_GC_net\água\Cold As Ice.png
+
+newmtl sn_luzes_turbinas
+	Kd 0.0000 1.0000 0.6689
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.2800
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.4800
+	Ke 0.0000 1.0000 0.6689
+	illum 2
+
+newmtl sn_helices
+	Kd 0.0000 0.4964 0.0000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.0000
+	Pm 0.5000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+
+newmtl sn_plastico_branco
+	Kd 0.9065 0.9065 0.9065
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.2560
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.1200
+	Ni 1.4000
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+
+newmtl sn_madeiras
+	Kd 0.5000 0.5000 0.5000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+	map_Kd B:\00_LIB_PESSOAL\0_texturas\corona_assets\madeiras\21246a8b4c20.jpg
+
+newmtl sn_marmore
+	Kd 0.5000 0.5000 0.5000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+	map_Kd B:\00_LIB_PESSOAL\0_texturas\corona_assets\marmores\dc678975b2e1.jpg
+
+newmtl sn_piscina
+	Kd 0.5000 0.5000 0.5000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+	map_Kd B:\00_LIB_PESSOAL\blocos_defaults\0_texturas_gerais\ceramic_azul.jpg
+	bump B:\00_LIB_PESSOAL\blocos_defaults\0_texturas_gerais\ceramic_azul.jpg
+	map_bump B:\00_LIB_PESSOAL\blocos_defaults\0_texturas_gerais\ceramic_azul.jpg
+
+newmtl sn_agua
+	Kd 0.0000 0.0000 0.0000
+	Ks 1.0000 1.0000 1.0000
+	Tr 1.0000
+	d 0.0000
+	Tf 0.8776 0.9620 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.1200
+	Ni 1.5000
+	Ke 0.0000 0.0000 0.0000
+	illum 2
+
+newmtl sn_luzes_brancas
+	Kd 0.5000 0.5000 0.5000
+	Ks 1.0000 1.0000 1.0000
+	Tr 0.0000
+	d 1.0000
+	Tf 1.0000 1.0000 1.0000
+	Pr 0.0000
+	Pm 0.0000
+	Pc 0.0000
+	Pcr 0.0000
+	Ni 1.5200
+	Ke 1.0000 1.0000 1.0000
+	illum 2
