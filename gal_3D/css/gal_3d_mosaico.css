@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100%;
+
+    background-color: rgb(0, 0, 70);
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* FUNDO */
+
+#fundo {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(0, 0, 70);
+
+    z-index: -10;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+#h_p1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0.5% 2%;
+    background-color: black;
+    position: relative;
+}
+
+
+/* TÍTULO */
+
+.kbca1 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#h_p1 div h1 {
+    margin: 0;
+    font-size: 25px;
+    color: white;
+}
+
+/* =========================================================
+   ÁREA DOS BOTÕES
+   ========================================================= */
+
+.kbca2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   BANDEIRAS
+   ========================================================= */
+#lang_pt,
+#lang_en {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#lang_pt img,
+#lang_en img {
+    width: 54px;
+    height: 38px;
+    margin-right: 8px;
+    transition: 3s;
+}
+
+#lang_pt h5,
+#lang_en h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    transition: 3s;
+}
+
+/* HOVER */
+#lang_pt:hover img,
+#lang_en:hover img {
+    opacity: 0.25;
+    transition: 1s;
+}
+
+#lang_pt:hover h5,
+#lang_en:hover h5 {
+    color: rgba(180,180,255,1);
+    transition: 1s;
+}
+
+/* =========================================================
+   BOTÕES RGB / HOME
+   ========================================================= */
+
+#rgb_but,
+#home_but {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#rgb_but {
+    background-image:
+        url("../imgs/up_back_deact.png");
+}
+
+#home_but {
+    background-image:
+        url("../imgs/home_deact.png");
+}
+
+/* HOVER */
+#rgb_but:hover {
+    background-image:
+        url("../imgs/up_back_hover.png");
+}
+
+#home_but:hover {
+    background-image:
+        url("../imgs/home_hover.png");
+}
+
+/* GALERIA */
+#galeria {
+    width: 92%;
+    margin: 20px auto;
+    perspective: 1000px;
+}
+#grid_objetos,
+#grid_cenarios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    perspective: 1000px;
+}
+
+/* CARDS */
+.card_3d {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background-color: #111;
+    border-radius: 6px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition:
+        transform 0.2s ease-out,
+        box-shadow 0.2s ease-out;
+}
+
+
+.card_3d img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* TÍTULO SOBRE A IMAGEM */
+.card_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+    text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+}
+
+.card_3d:hover .card_title {
+    opacity: 0.75;
+}
+
+/* =========================================================
+   SEÇÕES DO MOSAICO
+   ========================================================= */
+#galeria_objetos,
+#galeria_cenarios {
+    width: 100%;
+}
+
+/* =========================================================
+   TÍTULOS DAS SEÇÕES
+   ========================================================= */
+#titulo_objetos,
+#titulo_cenarios {
+    margin: 0 0 20px 0;
+    text-align: left;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+}
+
+/* =========================================================
+   ESPAÇAMENTO ENTRE OBJETOS E CENAS
+   ========================================================= */
+#galeria_cenarios {
+    margin-top: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    #grid_objetos,
+    #grid_cenarios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 500px) {
+    #grid_objetos,
+    #grid_cenarios {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,594 @@
+* {
+     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+body {
+                margin: 0;
+                touch-action: none;
+                overflow: hidden;
+            }
+
+/* =========================================================
+   AVISO INICIAL - NAVEGAÇÃO 3D
+   ========================================================= */
+#navigation_help {
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    max-width: 650px;
+    padding: 14px 45px 14px 22px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+#navigation_help.hidden {
+    opacity: 0;
+}
+/* =========================================================
+   X - FECHAR AVISO
+   ========================================================= */
+#navigation_help_close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+    line-height: 20px;
+    color: white;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+#navigation_help_close:hover {
+    opacity: 1;
+}
+
+/* BOTÕES DE NAVEGAÇÃO */
+
+.nav_but {
+
+    width: 70px;
+    height: 70px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.8;
+
+    cursor: pointer;
+
+    appearance: none;
+
+}
+
+.nav_but:hover {
+    opacity: 1;
+
+}
+
+#home_but {
+background-image: url("../imgs/home_deact.png");
+}
+#home_but:hover {
+background-image: url("../imgs/home_hover.png");
+}
+
+#back_but {
+background-image: url("../imgs/up_back_deact.png");
+}
+#back_but:hover {
+background-image: url("../imgs/up_back_hover.png");
+}
+
+#gal_list_but {
+background-image: url("../imgs/gal_list_deact.png");
+}
+#gal_list_but:hover {
+background-image: url("../imgs/gal_list_hover.png");
+}
+
+#prev_but {
+background-image: url("../imgs/prev_deact.png");
+}
+#prev_but:hover {
+background-image: url("../imgs/prev_hover.png");
+}
+
+#next_but {
+background-image: url("../imgs/next_deact.png");
+}
+#next_but:hover {
+background-image: url("../imgs/next_hover.png");
+}
+
+#reset_but {
+background-image: url("../imgs/reset_deact.png");
+}
+#reset_but:hover {
+background-image: url("../imgs/reset_hover.png");
+}
+
+#fullscreen_but {
+background-image: url("../imgs/full_deact.png");
+}
+#fullscreen_but:hover {
+background-image: url("../imgs/full_hover.png");
+}
+#fullscreen_but.act {
+background-image: url("../imgs/full_act.png");
+}
+
+#info_but {
+background-image: url("../imgs/info_deact.png");
+}
+#info_but:hover {
+background-image: url("../imgs/info_hover.png");
+}
+#info_but.act {
+background-image: url("../imgs/info_act.png");
+}
+
+/* CANTO SUPERIOR ESQUERDO */
+
+#home_but,
+#back_but,
+#gal_list_but,
+#prev_but,
+#next_but {
+    text-decoration: none;
+}
+
+#nav_left {
+
+    position: fixed;
+
+    top: 20px;
+    left: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 8px;
+
+    z-index: 10;
+
+}
+
+
+/* CANTO SUPERIOR DIREITO */
+
+#nav_right {
+
+    position: fixed;
+
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 8px;
+
+    z-index: 10;
+
+}
+
+/* HOME / RGB */
+
+#begin {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+/* list / info */
+
+#more {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+/* ANTERIOR / POSTERIOR */
+
+#next_prev {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+/* RESET / FULLSCREEN */
+
+#system_but {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+/* BOTÕES DE VISUALIZAÇÃO */ 
+#v_ctr {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 8px;
+
+    z-index: 10;
+}
+
+.v_butb {
+    width: 70px;
+    height: 70px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    background-image: url("../imgs/beauty_vis_deact.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    cursor: pointer;
+
+    appearance: none;
+    opacity: 0.8;
+}
+
+
+.v_butb:hover {
+    background-image: url("../imgs/beauty_vis_hover.png");
+    opacity: 1;
+}
+
+
+.v_butb.act {
+    background-image: url("../imgs/beauty_vis_act.png");
+
+    pointer-events: none;
+    opacity: 1;
+}
+
+.v_butc {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url("../imgs/clay_vis1_deact.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    appearance: none;
+    opacity: 0.8;
+}
+
+
+.v_butc:hover {
+    background-image: url("../imgs/clay_vis1_hover.png");
+    opacity: 1;
+}
+
+
+.v_butc.act {
+    background-image: url("../imgs/clay_vis1_act.png");
+    pointer-events: none;
+    opacity: 1;
+}
+
+.v_butw {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url("../imgs/wire_vis_deact.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    appearance: none;
+    opacity: 0.8;
+}
+
+
+.v_butw:hover {
+    background-image: url("../imgs/wire_vis_hover.png");
+    opacity: 1;
+}
+
+
+.v_butw.act {
+    background-image: url("../imgs/wire_vis_act.png");
+    pointer-events: none;
+    opacity: 1;
+}
+
+.v_bute {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url("../imgs/edge_vis_deact.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.8;
+    cursor: pointer;
+    appearance: none;
+}
+
+#v_ctr [data-mode="edges"] {
+    margin-left: 25px;
+}
+
+
+.v_bute:hover {
+    background-image: url("../imgs/edge_vis_hover.png");
+    opacity: 1;
+}
+
+
+.v_bute.act {
+    background-image: url("../imgs/edge_vis_act.png");
+    opacity: 1;
+}
+
+/* VELOCIDADE DE ROTAÇÃO */
+
+#anim_speed {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 1;
+    cursor: pointer;
+    appearance: none;
+}
+
+/* =========================================================
+BOTÕES DE CÂMERA — CENAS 3D
+========================================================= */
+.cam_but {
+width: 66px;
+height: 66px;
+padding: 0;
+margin: 0;
+border: none;
+outline: none;
+background-color: transparent;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+cursor: pointer;
+appearance: none;
+opacity: 0.7;
+border-radius: 50%;
+}
+
+.cam_but:hover {
+opacity: 1;
+}
+
+.cam_but.act {
+opacity: 1;
+outline: 1px solid white;
+outline-offset: 2px;
+pointer-events: none;
+}
+
+
+/* =====================================================
+   JANELA DE INFORMAÇÕES
+   ===================================================== */
+#info_overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+/* Quando a janela estiver aberta */
+#info_overlay.open {
+    display: flex;
+}
+
+/* =====================================================
+   JANELA
+   ===================================================== */
+#info_window {
+    position: relative;
+    width: min(950px, 115vw);
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 25px 50px 50px 50px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+/* =====================================================
+   BOTÃO bilingue e FECHAR
+   ===================================================== */
+   #info_lang {
+    position: absolute;
+    top: 12px;
+    right: 58px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    background-image: url("../imgs/bandeira_br_thumb1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition:
+        border-color 0.15s,
+        background-image 0.15s;
+}
+
+#info_lang:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+#info_content_pt,
+#info_content_en {
+    width: 100%;
+}
+
+#info_content_en {
+    display: none;
+}
+
+#info_close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    font-size: 26px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#info_close:hover {
+    background: white;
+    color: black;
+}
+
+/* =====================================================
+   TEXTO
+   ===================================================== */
+#info_content_pt h2 {
+    margin: 5px 0 20px 0;
+    font-size: 30px;
+}
+
+#info_content_pt h3 {
+    margin: 25px 0 12px 0;
+    font-size: 25px;
+}
+
+#info_content_pt p {
+    color: #ccc;
+    margin: 4px 0;
+    line-height: 1.1;
+    font-size: 18px;
+}
+
+#info_content_en h2 {
+    margin: 5px 0 20px 0;
+    font-size: 30px;
+}
+
+#info_content_en h3 {
+    margin: 25px 0 12px 0;
+    font-size: 25px;
+}
+
+#info_content_en p {
+    color: #ccc;
+    margin: 4px 0;
+    line-height: 1.1;
+    font-size: 18px;
+}
+
+.info_data p {
+    color: #ccc;
+    margin: 4px 0;
+    line-height: 1.0;
+    font-size: 18px;
+}
+
+.info_data strong {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.info_links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info_links a {
+    color: white;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.info_links a:hover {
+    color: #aaa;
+}
+
+.info_description {
+    text-align: justify;
+}
