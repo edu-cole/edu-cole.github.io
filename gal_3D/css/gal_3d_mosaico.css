@@ -234,6 +234,7 @@ body {
 #galeria_objetos,
 #galeria_cenarios {
     width: 100%;
+    margin-top: 20px;
 }
 
 /* =========================================================
@@ -246,13 +247,6 @@ body {
     font-size: 24px;
     font-weight: normal;
     color: white;
-}
-
-/* =========================================================
-   ESPAÇAMENTO ENTRE OBJETOS E CENAS
-   ========================================================= */
-#galeria_cenarios {
-    margin-top: 20px;
 }
 
 /* RESPONSIVO */
