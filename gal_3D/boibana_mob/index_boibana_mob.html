@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>Boibana - HTML de 3D - Edu Cole</title>
+		<link href="../css/gal_3D.css" rel="stylesheet">
+	</head>
+	<body>
+		<canvas id="c"></canvas>
+
+		<div id="nav_left">
+		<div id="begin">
+	    <a class="nav_but" id="home_but"></a>
+	    <a class="nav_but" id="back_but"></a>
+		</div>
+
+		<div id="more">
+	    <a class="nav_but" id="gal_list_but"></a>
+	    <button class="nav_but" id="info_but"></button>
+		</div>
+		
+		<div id="nav_right">
+	    <div id="next_prev">
+        <a class="nav_but" id="prev_but"></a>
+        <a class="nav_but" id="next_but"></a>
+	    </div>
+
+	    <div id="system_but">
+        <button class="nav_but" id="reset_but"></button>
+        <button class="nav_but" id="fullscreen_but"></button>
+	    </div>
+		</div>
+
+		<!-- JANELA DE INFORMAÇÕES -->
+
+		<div id="info_overlay">
+		    <div id="info_window">
+		    <button id="info_lang" aria-label="Mudar idioma"></button>
+	        <button id="info_close" aria-label="Fechar informações">×</button>
+
+	        <!-- PT -->
+	        <div id="info_content_pt"><h2>Boibana Casa- minha primeira arquitetura 3D</h2>
+            <div class="info_data">
+            	<p><strong>Nome genérico da modelagem:</strong> Casa projetada pelo meu pai</p>
+            	<p><strong>Nome fictício:</strong> Boibana Casa</p>
+                <p><strong>Modelagem original:</strong> Março de 2019</p>
+                <p><strong>Softwares utilizados:</strong> 3ds Max</p>
+                <p><strong>Render original:</strong> Scanline Render</p>
+                <p><strong>Geometria otimizada:</strong> 2.902.830 polígonos e 2.244.716 vértices</p>
+                <p><strong>Dimensões aproximadas imaginadas:</strong> 9 × 25 × 8 m</p>
+                <p><strong>Formato otimizado publicado:</strong> MAX de 67 MB - HDRs de aproximadamente 25 MB cada</p>
+                <p><strong>Versão otimizada para web:</strong> Outubro de 2026</p>
+            </div>
+            <h3>Links</h3>
+            <div class="info_links">
+                <a href="https://youtu.be/iOJ7lNW38GI?si=VVA-dqZ8APk5dGL9" target="_blank" rel="noopener noreferrer">Vídeo original no YouTube</a>
+                <a href="https://www.instagram.com/p/CZZq4ydOMcS/" target="_blank" rel="noopener noreferrer">Vídeo original no Instagram</a>
+                <a href="https://giphy.com/gifs/3d-photoshop-digital-l378sw69DyUzYPNeg" target="_blank" rel="noopener noreferrer">GIF com decoração da biblioteca do Revit</a>
+                <a href="https://giphy.com/gifs/design-3d-digital-3ohs7HG5lGY18RYyZ2" target="_blank" rel="noopener noreferrer">GIF com decoração autoral 1</a>
+                <a href="https://giphy.com/gifs/design-3d-digital-1i4rWPpFdXEQ6DxK4b" target="_blank" rel="noopener noreferrer">GIF com decoração autoral 2</a>
+                <a href="https://giphy.com/gifs/design-3d-digital-THXTzFQBJUj0yqIi6s" target="_blank" rel="noopener noreferrer">GIF com decoração autoral 3</a>
+                <a href="https://giphy.com/gifs/design-3d-digital-PoGajtk4e59vUIqcie" target="_blank" rel="noopener noreferrer">GIF com decoração autoral 4</a>
+            </div>
+            <h3>Descrição</h3>
+            <p class="info_description">
+                Depois de fazer um curso de Revit na Cadritech em 2014, modelei essa casa que foi projetada e contruída pelo meu pai, na qual meus pais moram atualmente. Inicialmente ela foi mobiliada com a biblioteca própria do Revit. Entre 2017 e 2018 modelei toda a decoração da casa com objetos autorais (meus e do meu irmão). Essa foi a minha primeira modelagem de uma arquitetura, que gerou diversas produções e publicações para a 2C3D.
+
+                Após estudar a planta baixa feita em papel, passei pelos
+                processos de modelagem, texturização, criação das decorações, renderização,
+                criação da música e edição do vídeo e gif.
+            </p>
+        </div>
+
+        	<!-- EN -->
+	        <div id="info_content_en"><h2>Boibana House – My first 3D architectural project</h2>
+            <div class="info_data">
+            	<p><strong>Generic name of the modeling:</strong> House designed by my father</p>
+            	<p><strong>Fictitious name:</strong> Boibana House</p>
+                <p><strong>Original modeling:</strong> March 2019</p>
+                <p><strong>Softwares used:</strong> 3ds Max</p>
+                <p><strong>Original render:</strong> Scanline Render</p>
+                <p><strong>Optimized geometry:</strong> 2.902.830 polygons and 2.244.716 vertices</p>
+                <p><strong>Estimated approximate dimensions:</strong>  9 × 25 × 8 m</p>
+                <p><strong>Published optimized format:</strong> MAX of 67 MB - HDRs of approximately 25 MB each</p>
+                <p><strong>Web-optimized version:</strong> October 2026</p>
+            </div>
+            <h3>Links</h3>
+            <div class="info_links">
+                <a href="https://youtu.be/iOJ7lNW38GI?si=VVA-dqZ8APk5dGL9" target="_blank" rel="noopener noreferrer">Original video on YouTube</a>
+                <a href="https://www.instagram.com/p/CZZq4ydOMcS/" target="_blank" rel="noopener noreferrer">Original video on Instagram</a>
+                <a href="https://giphy.com/gifs/3d-photoshop-digital-l378sw69DyUzYPNeg" target="_blank" rel="noopener noreferrer">GIF showing Revit library decoration</a>
+                <a href="https://giphy.com/gifs/design-3d-digital-3ohs7HG5lGY18RYyZ2" target="_blank" rel="noopener noreferrer">GIF with original objects 1</a>
+                <a href="https://giphy.com/gifs/design-3d-digital-1i4rWPpFdXEQ6DxK4b" target="_blank" rel="noopener noreferrer">GIF with original objects 2</a>
+                <a href="https://giphy.com/gifs/design-3d-digital-THXTzFQBJUj0yqIi6s" target="_blank" rel="noopener noreferrer">GIF with original objects 3</a>
+                <a href="https://giphy.com/gifs/design-3d-digital-PoGajtk4e59vUIqcie" target="_blank" rel="noopener noreferrer">GIF with original objects 4</a>
+            </div>
+            <h3>Description</h3>
+            <p class="info_description">
+                After taking a Revit course at Cadritech in 2014, I modeled the house designed and built by my father, the home where my parents currently live. Initially, it was furnished using Revit's standard library. Between 2017 and 2018, I modeled the entire interior décor using original objects (created by me and my brother). This was my first architectural modeling project, leading to various productions and publications for the 2C3D.
+
+                After studying the hand-drawn floor plan paper, I went through the
+                processes of modeling, texturing, creating décor elements, rendering,
+                composing the music, and editing the video and GIF.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+		<!-- carregamentos botões -->
+		<div id="v_ctr">
+    <button class="cam_but act" id="cam1_but"></button>
+    <button class="cam_but" id="cam2_but"></button>
+    <button class="cam_but" id="cam3_but"></button>
+    <button class="cam_but" id="cam4_but"></button>
+    <button class="cam_but" id="cam5_but"></button>
+    <button class="cam_but" id="cam6_but"></button>
+    <button class="cam_but" id="cam7_but"></button>
+    <button class="cam_but" id="cam8_but"></button>
+    <button class="cam_but" id="cam9_but"></button>
+    <button class="cam_but" id="cam10_but"></button>
+    <button class="cam_but" id="cam11_but"></button>
+    <button class="cam_but" id="cam12_but"></button>
+    <button class="cam_but" id="cam13_but"></button>
+    <button class="cam_but" id="cam14_but"></button>
+    <p>___</p>
+    <button id="anim_speed"></button>
+        </div>
+
+
+<script type="importmap">
+			{
+				"imports": {
+					"three": "https://threejs.org/build/three.module.js",
+					"three/addons/": "https://threejs.org/examples/jsm/"
+				}
+			}
+		</script>
+
+		<!-- carregamento JS externo 1 -->
+		<script type="module" src="gal_3D_boibana_mob.js"></script>
+
+	</body>
+</html>
