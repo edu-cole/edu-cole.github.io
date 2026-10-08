@@ -175,7 +175,7 @@ export const galleryObjects = [
         html: 'index_boibana_mob.html',
         ncams: '14',
         type: 'scene',
-        status: 'coming',
+        status: 'published',
         titlePT: 'BOIBANA',
         titleEN: 'BOIBANA',
         imagePT: 'boibana_mob_thumb.jpg',
