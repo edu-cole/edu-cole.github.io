@@ -170,16 +170,16 @@ export const galleryObjects = [
         imageEN: 'futuristic_room_thumb.jpg'
     },
     {
-        id: 'cenario3',
-        folder: 'cenario3',
-        html: 'index_cenario3.html',
-        ncams: '1',
+        id: 'boibana_mob',
+        folder: 'boibana_mob',
+        html: 'index_boibana_mob.html',
+        ncams: '14',
         type: 'scene',
         status: 'coming',
-        titlePT: 'cenario3',
-        titleEN: 'cenario3',
-        imagePT: 'por_vir_thumb.jpg',
-        imageEN: 'por_vir_thumb_en.jpg'
+        titlePT: 'BOIBANA',
+        titleEN: 'BOIBANA',
+        imagePT: 'boibana_mob_thumb.jpg',
+        imageEN: 'boibana_mob_thumb.jpg'
     },
     {
         id: 'cenario4',
